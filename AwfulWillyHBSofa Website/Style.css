@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: MenuFont;
+    src: url("Fonts/Menufont.ttf")
+}
+
+@font-face{
+    font-family: AmogusFont;
+    src: url("Fonts/VCR_OSD_MONO.ttf")
+}
+
+nav{
+    background-color: #ffcd60;
+    height: 250px;
+
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.267);
+}
+
+nav ul{
+
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav li{
+    list-style-type: none;
+    width: 200px;
+    float: left;
+}
+
+nav a{
+
+    color: white;
+    line-height: 125px;
+    display: block;
+
+    font-family: MenuFont;
+    font-size: 50px;
+
+    text-decoration: none;
+    text-shadow: 0 4px orange;
+    text-align: center;
+}
+
+nav a:hover{
+    color: rgb(248, 245, 245);
+}
+
+
+#banner{
+    margin-top: 20px;
+    width: 500px;
+}
+
+body{
+    background-color: rgb(246, 246, 246);
+    margin: 0;
+}
+
+#News, #Twitter{
+    border-radius: 50px;
+    margin: 100px;
+    height: 2500px;
+
+    float: left;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.267);
+    display: block;
+}
+#News{
+    margin-right: 0;
+    width: 60%;   
+}
+
+.NewsElement{
+    margin: 100px;
+    border-radius: 50px;
+    background-color: rgb(246, 246, 246);
+    height: 500px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.267);
+}
+
+.NewsElement div h1{
+    line-height: 100px;
+    color:orange;
+    font-family: AmogusFont;
+    margin: 50px;
+}
+
+.NewsElement div{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+    background-color: rgb(228, 228, 228);
+    height: 100px;
+}
+
+.NewsElement article h2{
+
+    margin: 50px;
+    font-size: 28px;
+    float: right;
+    width: 1150px;
+    font-family: AmogusFont;
+}
+
+.NewsElement article img{
+    
+    margin: 25px;
+    margin-top: 50px;
+    vertical-align: middle;
+    height: 300px;
+    
+}
+
+#Twitter{
+    
+    width: 30%;
+}
+
+.twitter-timeline{
+    width: 20%;
+}
+
+footer div{
+    clear: left;
+    background-color: #ffcd60;
+    height: 250px;
+
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.267);
+}
