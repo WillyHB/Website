@@ -1,3 +1,5 @@
+export {}
+
 const div = document.createElement("div");
 
 div.className = "NewsElement";
@@ -25,4 +27,8 @@ div.appendChild(article);
 
 document.getElementById("News").appendChild(div);
 
-fetch("NewsJason.json");
+fetch("NewsJason.json")
+    .then(response => response.json())
+    .then(data =>{
+        console.log(data)
+    })

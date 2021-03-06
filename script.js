@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 var div = document.createElement("div");
 div.className = "NewsElement";
 var titleDiv = document.createElement("div");
@@ -14,3 +16,8 @@ article.appendChild(h2);
 article.appendChild(image);
 div.appendChild(article);
 document.getElementById("News").appendChild(div);
+fetch("NewsJason.json")
+    .then(function (response) { return response.json(); })
+    .then(function (data) {
+    console.log(data);
+});
