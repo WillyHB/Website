@@ -1,5 +1,3 @@
-"use strict";
-exports.__esModule = true;
 fetch("NewsJason.json")
     .then(function (response) { return response.json(); })
     .then(function (data) {

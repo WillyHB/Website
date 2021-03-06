@@ -1,4 +1,3 @@
-export {}
 
 fetch("NewsJason.json")
     .then(response => response.json())
