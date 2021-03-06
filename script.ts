@@ -1,6 +1,12 @@
 export {}
 
-const div = document.createElement("div");
+fetch("NewsJason.json")
+    .then(response => response.json())
+    .then(data =>{
+        console.log(data.Title[0])
+    })
+
+/*const div = document.createElement("div");
 
 div.className = "NewsElement";
 
@@ -25,10 +31,6 @@ article.appendChild(h2);
 article.appendChild(image);
 div.appendChild(article);
 
-document.getElementById("News").appendChild(div);
+document.getElementById("News").appendChild(div);*/
 
-fetch("NewsJason.json")
-    .then(response => response.json())
-    .then(data =>{
-        console.log(data.Title[0])
-    })
+
