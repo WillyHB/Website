@@ -25,8 +25,4 @@ div.appendChild(article);
 
 document.getElementById("News").appendChild(div);
 
-fetch('./NewsJson.json').then(function (response){
-    return response.json
-}).then (function (obj){
-    console.log(obj);
-});
+fetch("NewsJason.json");
