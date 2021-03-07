@@ -64,7 +64,7 @@ body{
 #News, #Twitter{
     border-radius: 50px;
     margin: 100px;
-    height: 2500px;
+    min-height: 2500px;
 
     float: left;
     background-color: white;
@@ -76,6 +76,7 @@ body{
 #News{
     margin-right: 0;
     width: 2050px;   
+    
 
 }
 
