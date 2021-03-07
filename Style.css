@@ -70,10 +70,13 @@ body{
     background-color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.267);
     display: block;
+
+    overflow-y: auto;
 }
 #News{
     margin-right: 0;
-    width: 60%;   
+    width: 2050px;   
+
 }
 
 .NewsElement{
@@ -84,11 +87,26 @@ body{
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.267);
 }
 
-.NewsElement div h1{
-    line-height: 100px;
+.Title{
+
+    float: left;
+
+    line-height: 50px;
+    margin: 25px;
+    
     color:orange;
     font-family: AmogusFont;
-    margin: 50px;
+
+}
+
+.Date{
+    float: right;
+
+    line-height: 50px;
+    margin: 25px;
+
+    color:orange;
+    font-family: AmogusFont;
 }
 
 .NewsElement div{
@@ -119,7 +137,7 @@ body{
 
 #Twitter{
     
-    width: 30%;
+    width: 1018px;
 }
 
 .twitter-timeline{
