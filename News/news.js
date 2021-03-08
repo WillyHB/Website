@@ -27,6 +27,8 @@ fetch("./NewsJson.json")
         image.src = "Images/CoverImages/" + data.FileName[i];
         date.textContent = timeSince(data.date[i]);
         function timeSince(date) {
+            var monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"];
             var day = date.substring(0, 2);
             var month = date.substring(3, 5);
             date = date.replace("03", "07");
@@ -34,24 +36,30 @@ fetch("./NewsJson.json")
             var dateUTC = new Date(date);
             var seconds = Math.floor(((new Date().getTime() / 1000) - dateUTC.getTime() / 1000));
             var interval = seconds / 31536000;
+            interval = seconds / 604800;
             if (interval > 1) {
-                return Math.floor(interval) + " year(s) ago";
-            }
-            interval = seconds / 2592000;
-            if (interval > 1) {
-                return Math.floor(interval) + " month(s) ago";
+                return monthNames[dateUTC.getUTCMonth()] + " " + dateUTC.getDate() + ", " + dateUTC.getUTCFullYear();
             }
             interval = seconds / 86400;
-            if (interval > 1) {
-                return Math.floor(interval) + " day(s) ago";
+            if (interval >= 1 && interval < 2) {
+                return Math.floor(interval) + " day ago";
+            }
+            else if (interval >= 2) {
+                return Math.floor(interval) + " days ago";
             }
             interval = seconds / 3600;
-            if (interval > 1) {
-                return Math.floor(interval) + " hour(s) ago";
+            if (interval >= 1 && interval < 2) {
+                return Math.floor(interval) + " hour ago";
+            }
+            else if (interval >= 2) {
+                return Math.floor(interval) + " hours ago";
             }
             interval = seconds / 60;
-            if (interval > 1) {
-                return Math.floor(interval) + " minute(s) ago";
+            if (interval >= 1 && interval < 2) {
+                return Math.floor(interval) + " minute ago";
+            }
+            else if (interval >= 2) {
+                return Math.floor(interval) + " minutes ago";
             }
             return Math.floor(seconds) + " seconds ago";
         }

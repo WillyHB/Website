@@ -5,12 +5,12 @@
 
 @font-face{
     font-family: MenuFont;
-    src: url("Fonts/Menufont.ttf")
+    src: url("/Fonts/Menufont.ttf")
 }
 
 @font-face{
     font-family: AmogusFont;
-    src: url("Fonts/VCR_OSD_MONO.ttf")
+    src: url("/Fonts/VCR_OSD_MONO.ttf")
 }
 
 nav{

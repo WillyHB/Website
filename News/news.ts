@@ -45,8 +45,12 @@ fetch("./NewsJson.json")
         date.textContent = timeSince(data.date[i]);
         
 
+
         function timeSince(date) {
 
+          const monthNames = ["January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December"];
+          
             var day = date.substring(0, 2);
             var month = date.substring(3,5);
 
@@ -63,32 +67,40 @@ fetch("./NewsJson.json")
             var seconds = Math.floor(((new Date().getTime()/1000) - dateUTC.getTime() / 1000))
           
             var interval = seconds / 31536000;
-          
-            if (interval > 1) {
-              return Math.floor(interval) + " year(s) ago";
-            }
 
-            interval = seconds / 2592000;
-            if (interval > 1) {
-              return Math.floor(interval) + " month(s) ago";
+            interval = seconds / 604800;
+            if (interval > 1){
+              return `${monthNames[dateUTC.getUTCMonth()]} ${dateUTC.getDate()}, ${dateUTC.getUTCFullYear()}`
             }
 
             interval = seconds / 86400;
-            if (interval > 1) {
-              return Math.floor(interval) + " day(s) ago";
+            if (interval >= 1 && interval < 2 ) {
+              return Math.floor(interval) + " day ago";
+            }
+
+            else if (interval >= 2){
+              return Math.floor(interval) + " days ago";
             }
 
             interval = seconds / 3600;
-            if (interval > 1) {
-              return Math.floor(interval) + " hour(s) ago";
+            if (interval >= 1 && interval < 2 ) {
+              return Math.floor(interval) + " hour ago";
+            }
+
+            else if (interval >= 2){
+              return Math.floor(interval) + " hours ago";
             }
 
             interval = seconds / 60;
-            if (interval > 1) {
-              return Math.floor(interval) + " minute(s) ago";
+            if (interval >= 1 && interval < 2 ) {
+              return Math.floor(interval) + " minute ago";
+            }
+
+            else if (interval >= 2){
+              return Math.floor(interval) + " minutes ago";
             }
        
-  
+            
             return Math.floor(seconds) + " seconds ago";
           }
           var aDay = 24*60*60*1000;              
