@@ -74,8 +74,8 @@ fetch("./NewsJson.json")
             }
 
             interval = seconds / 86400;
-            if (interval >= 1 && interval < 2 ) {
-              return Math.floor(interval) + " day ago";
+            if (interval > 1  && interval < 2) {
+              return Math.floor(interval) + " dayz ago";
             }
 
             else if (interval >= 2){
@@ -83,7 +83,7 @@ fetch("./NewsJson.json")
             }
 
             interval = seconds / 3600;
-            if (interval >= 1 && interval < 2 ) {
+            if (interval > 1 && interval < 2 ) {
               return Math.floor(interval) + " hour ago";
             }
 
@@ -92,7 +92,7 @@ fetch("./NewsJson.json")
             }
 
             interval = seconds / 60;
-            if (interval >= 1 && interval < 2 ) {
+            if (interval > 1 && interval < 2 ) {
               return Math.floor(interval) + " minute ago";
             }
 
