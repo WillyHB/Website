@@ -4,6 +4,7 @@ fetch("./NewsJson.json")
     for (var i = 0; i < data.Title.length; i++) {
         var div = document.createElement("div");
         div.className = "NewsElement";
+        div.onclick = Clicked;
         var titleDiv = document.createElement("div");
         var title = document.createElement("h1");
         title.className = "Title";

@@ -7,6 +7,7 @@ fetch("./NewsJson.json")
         var div = document.createElement("div");
 
         div.className = "NewsElement";
+        div.addEventListener("click", Clicked);
 
         var titleDiv = document.createElement("div");
         var title = document.createElement("h1");

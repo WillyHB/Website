@@ -8,12 +8,15 @@
     src: url("/Fonts/VCR_OSD_MONO.ttf")
 }
 
+
+
 body{
     background-color: rgb(246, 246, 246);
     margin: 0;
 }
 
 #News, #Twitter{
+
     border-radius: 50px;
     margin: 100px;
     min-height: 2500px;
@@ -57,6 +60,8 @@ body{
 
 .NewsElement:active{
     transform: scale(1);
+
+
 }
 
 .Title{
