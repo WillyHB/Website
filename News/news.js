@@ -31,7 +31,7 @@ fetch("./NewsJson.json")
                 "July", "August", "September", "October", "November", "December"];
             var day = date.substring(0, 2);
             var month = date.substring(3, 5);
-            date = date.replace("03", "07");
+            date = date.replace(date.substring(3, 5), day);
             date = date.replace(date.substring(0, 2), month);
             var dateUTC = new Date(date);
             var seconds = Math.floor(((new Date().getTime() / 1000) - dateUTC.getTime() / 1000));
@@ -48,14 +48,14 @@ fetch("./NewsJson.json")
                 return Math.floor(interval) + " days ago";
             }
             interval = seconds / 3600;
-            if (interval >= 1 && interval < 2) {
+            if (interval > 1 && interval < 2) {
                 return Math.floor(interval) + " hour ago";
             }
             else if (interval >= 2) {
                 return Math.floor(interval) + " hours ago";
             }
             interval = seconds / 60;
-            if (interval >= 1 && interval < 2) {
+            if (interval > 1 && interval < 2) {
                 return Math.floor(interval) + " minute ago";
             }
             else if (interval >= 2) {

@@ -3,8 +3,7 @@ fetch("./NewsJson.json")
 .then(response => response.json())
 .then(data =>{
     for (let i = 0; i < data.Title.length; i++) {
-        
-        
+               
         var div = document.createElement("div");
 
         div.className = "NewsElement";
@@ -45,7 +44,6 @@ fetch("./NewsJson.json")
         date.textContent = timeSince(data.date[i]);
         
 
-
         function timeSince(date) {
 
           const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -55,14 +53,10 @@ fetch("./NewsJson.json")
             var month = date.substring(3,5);
 
       
-            date = date.replace("03", "07")
+            date = date.replace(date.substring(3,5), day)
             date = date.replace(date.substring(0,2), month);
-
-            
+   
             var dateUTC = new Date(date);
-
-
-
 
             var seconds = Math.floor(((new Date().getTime()/1000) - dateUTC.getTime() / 1000))
           
@@ -74,8 +68,8 @@ fetch("./NewsJson.json")
             }
 
             interval = seconds / 86400;
-            if (interval > 1  && interval < 2) {
-              return Math.floor(interval) + " dayz ago";
+            if (interval >= 1  && interval < 2) {
+              return Math.floor(interval) + " day ago";
             }
 
             else if (interval >= 2){
