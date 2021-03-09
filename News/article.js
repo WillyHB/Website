@@ -1,27 +1,28 @@
-"use strict";
 fetch("./NewsJson.json")
-    .then(response => response.json())
-    .then(data => {
-    for (let i = 0; i < data.Title.length; i++) {
+    .then(function (response) { return response.json(); })
+    .then(function (data) {
+    for (var i = 0; i < data.Title.length; i++) {
         var template = document.getElementsByTagName("template")[0];
         var clone = template.content.cloneNode(true);
         document.body.appendChild(clone);
-        document.getElementById("popup-null").id = `popup-${i}`;
+        document.getElementById("popup-null").id = "popup-" + i;
+        document.getElementsByClassName("articleTitle")[i].textContent = data.Title[i];
+        document.getElementsByClassName("articleText")[i].textContent = data.Text[i];
     }
 });
-function Clicked(index) {
-    var _a;
+var index = 0;
+function Clicked(i) {
     document.body.style.overflow = "hidden";
-    (_a = document.getElementById(`popup-${index}`)) === null || _a === void 0 ? void 0 : _a.classList.add("active");
-    window.addEventListener("keydown", (event) => {
+    document.getElementById("popup-" + i).classList.add("active");
+    index = i;
+    window.addEventListener("keydown", function (event) {
         if (event.key == "Escape") {
-            escaped(index);
+            escaped();
         }
     });
 }
-function escaped(index) {
-    var _a;
+function escaped() {
     document.body.style.overflow = "auto";
     window.removeEventListener;
-    (_a = document.getElementById(`popup-${index}`)) === null || _a === void 0 ? void 0 : _a.classList.remove("active");
+    document.getElementById("popup-" + index).classList.remove("active");
 }

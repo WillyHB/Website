@@ -1,27 +1,28 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-@font-face{
+@font-face {
     font-family: AmogusFont;
     src: url("/Fonts/VCR_OSD_MONO.ttf")
 }
 
 
 
-body{
+body {
     background-color: rgb(246, 246, 246);
-    margin: 0;   
+    margin: 0;
 }
 
-#article{
+#article {
     margin: 100px;
     z-index: 1001;
     height: 100px;
 }
 
-#News, #Twitter{
+#News,
+#Twitter {
 
     border-radius: 50px;
     margin: 100px;
@@ -35,13 +36,13 @@ body{
 }
 
 
-#News{
+#News {
     margin-right: 0;
-    width: 2050px;   
+    width: 2050px;
 }
 
-.NewsElement{
-    
+.NewsElement {
+
     position: relative;
     margin: 100px;
     border-radius: 50px;
@@ -49,56 +50,57 @@ body{
     height: 500px;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.267);
 
-    
-    transition: transform 250ms ease;   
+
+    transition: transform 250ms ease;
 }
 
-.NewsElement:hover, .NewsElement:focus{
+.NewsElement:hover,
+.NewsElement:focus {
 
     transform: scale(1.01);
-    
+
     box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.267);
 
     transition: transform 150ms ease;
 }
 
-.NewsElement:active{
+.NewsElement:active {
     transform: scale(1);
 
 
 }
 
-.Title{
+.Title {
 
     float: left;
 
     line-height: 50px;
     margin: 25px;
-    
-    color:orange;
+
+    color: orange;
     font-family: AmogusFont;
 
 }
 
-.Date{
+.Date {
     float: right;
 
     line-height: 50px;
     margin: 25px;
 
-    color:orange;
+    color: orange;
     font-family: AmogusFont;
 }
 
-.NewsElement div{
+.NewsElement div {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    
+
     background-color: rgb(228, 228, 228);
     height: 100px;
 }
 
-.NewsElement article h2{
+.NewsElement article h2 {
 
     margin: 50px;
     font-size: 28px;
@@ -107,16 +109,16 @@ body{
     font-family: AmogusFont;
 }
 
-.NewsElement article img{
-    
+.NewsElement article img {
+
     margin: 25px;
     margin-top: 50px;
     vertical-align: middle;
     height: 300px;
-    
+
 }
 
-.popup .overlay{
+.popup .overlay {
     position: fixed;
     top: 0px;
     left: 0x;
@@ -127,8 +129,8 @@ body{
     display: none;
 }
 
-.popup .content{
-    position: absolute;
+.popup .content {
+    position: fixed;
     border-radius: 50px;
     top: 50%;
     left: 50%;
@@ -142,22 +144,22 @@ body{
     box-sizing: border-box;
 }
 
-.popup.active .overlay{
+.popup.active .overlay {
     display: block;
 }
 
-.popup.active .content{
+.popup.active .content {
     transition: all 300ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
 }
 
-.popup .close-btn{
+.popup .close-btn {
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     right: 20px;
     top: 20px;
     width: 50px;
-    height:50px;
+    height: 50px;
     background: orange;
     color: white;
     font-size: 35px;
@@ -169,16 +171,16 @@ body{
 
 }
 
-#Twitter{
-    
+#Twitter {
+
     width: 1018px;
 }
 
-.twitter-timeline{
+.twitter-timeline {
     width: 20%;
 }
 
-footer div{
+footer div {
     clear: left;
     background-color: #ffcd60;
     height: 250px;
