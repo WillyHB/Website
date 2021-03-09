@@ -1,10 +1,11 @@
+"use strict";
 fetch("./NewsJson.json")
-    .then(function (response) { return response.json(); })
-    .then(function (data) {
-    for (var i = 0; i < data.Title.length; i++) {
+    .then(response => response.json())
+    .then(data => {
+    for (let i = 0; i < data.Title.length; i++) {
         var div = document.createElement("div");
         div.className = "NewsElement";
-        div.onclick = Clicked;
+        div.addEventListener("click", Clicked);
         var titleDiv = document.createElement("div");
         var title = document.createElement("h1");
         title.className = "Title";
@@ -25,10 +26,10 @@ fetch("./NewsJson.json")
         document.getElementById("News").appendChild(div);
         title.textContent = data.Title[i];
         h2.textContent = data.Description[i];
-        image.src = "Images/CoverImages/" + data.FileName[i];
+        image.src = `Images/CoverImages/${data.FileName[i]}`;
         date.textContent = timeSince(data.date[i]);
         function timeSince(date) {
-            var monthNames = ["January", "February", "March", "April", "May", "June",
+            const monthNames = ["January", "February", "March", "April", "May", "June",
                 "July", "August", "September", "October", "November", "December"];
             var day = date.substring(0, 2);
             var month = date.substring(3, 5);
@@ -39,7 +40,7 @@ fetch("./NewsJson.json")
             var interval = seconds / 31536000;
             interval = seconds / 604800;
             if (interval > 1) {
-                return monthNames[dateUTC.getUTCMonth()] + " " + dateUTC.getDate() + ", " + dateUTC.getUTCFullYear();
+                return `${monthNames[dateUTC.getUTCMonth()]} ${dateUTC.getDate()}, ${dateUTC.getUTCFullYear()}`;
             }
             interval = seconds / 86400;
             if (interval >= 1 && interval < 2) {

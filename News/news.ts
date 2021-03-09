@@ -19,7 +19,7 @@ fetch("./NewsJson.json")
         date.textContent = "27/02/2021"
 
         title.textContent = "This was made with Typescript :)"
-
+      
         titleDiv.appendChild(title);
         titleDiv.appendChild(date);
 
@@ -36,7 +36,7 @@ fetch("./NewsJson.json")
         article.appendChild(image);
         div.appendChild(article);
 
-        document.getElementById("News").appendChild(div);
+        document.getElementById("News")!.appendChild(div);
 
         title.textContent = data.Title[i];
         h2.textContent = data.Description[i];
@@ -45,7 +45,7 @@ fetch("./NewsJson.json")
         date.textContent = timeSince(data.date[i]);
         
 
-        function timeSince(date) {
+        function timeSince(date : string) {
 
           const monthNames = ["January", "February", "March", "April", "May", "June",
           "July", "August", "September", "October", "November", "December"];
