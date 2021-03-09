@@ -1,26 +1,36 @@
 
+fetch("./NewsJson.json")
+.then(response => response.json())
+.then(data =>{
+    for (let i = 0; i < data.Title.length; i++) {
+
+        var template = document.getElementsByTagName("template")[0]!;
+        var clone = template.content.cloneNode(true);
+        
+
+        document.body.appendChild(clone);
+
+        document.getElementById("popup-null")!.id = `popup-${i}`;
+    }
+
+});        
     
-function Clicked(){
+function Clicked(index : number){
     document.body.style.overflow = "hidden";
 
-    var template = document.getElementsByTagName("template")[0]!;
-    var clone = template.content.cloneNode(true);
+document.getElementById(`popup-${index}`)?.classList.add("active");
 
-    document.body.appendChild(clone);
-
-    document.getElementById("popup-1")?.classList.add("active");
-    
     window.addEventListener("keydown", (event) => {
         if (event.key == "Escape"){
-            escaped();
+            escaped(index);
         }
     });
 }
 
-function escaped(){
+function escaped(index : number){
     document.body.style.overflow = "auto";
     window.removeEventListener;
-    document.getElementById("popup-1")?.classList.remove("active");
+    document.getElementById(`popup-${index}`)?.classList.remove("active");
 }
 
 

@@ -7,7 +7,7 @@ fetch("./NewsJson.json")
         var div = document.createElement("div");
 
         div.className = "NewsElement";
-        div.addEventListener("click", Clicked);
+        div.addEventListener("click", function(){Clicked(i)});
 
         var titleDiv = document.createElement("div");
         var title = document.createElement("h1");
@@ -19,7 +19,7 @@ fetch("./NewsJson.json")
         date.textContent = "27/02/2021"
 
         title.textContent = "This was made with Typescript :)"
-      
+
         titleDiv.appendChild(title);
         titleDiv.appendChild(date);
 
