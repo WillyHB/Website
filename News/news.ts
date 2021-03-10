@@ -2,8 +2,10 @@
 fetch("./NewsJson.json")
 .then(response => response.json())
 .then(data =>{
-    for (let i = 0; i < data.Title.length; i++) {
+    for (let i = data.Title.length -1; i >= 0; i--) {
                
+        // (let i = data.Title.length; i >= 0; i--
+        // 
         var div = document.createElement("div");
 
         div.className = "NewsElement";
@@ -41,9 +43,9 @@ fetch("./NewsJson.json")
         title.textContent = data.Title[i];
         h2.textContent = data.Description[i];
         image.src = `Images/CoverImages/${data.FileName[i]}`
-
+     
         date.textContent = timeSince(data.date[i]);
-        
+
 
         function timeSince(date : string) {
 

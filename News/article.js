@@ -7,7 +7,7 @@ fetch("./NewsJson.json")
         document.body.appendChild(clone);
         document.getElementById("popup-null").id = "popup-" + i;
         document.getElementsByClassName("articleTitle")[i].textContent = data.Title[i];
-        document.getElementsByClassName("articleText")[i].textContent = data.Text[i];
+        document.getElementsByClassName("articleText")[i].innerHTML = data.Text[i];
     }
 });
 var index = 0;

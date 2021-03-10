@@ -15,12 +15,6 @@ body {
     margin: 0;
 }
 
-#article {
-    margin: 100px;
-    z-index: 1001;
-    height: 100px;
-}
-
 #News,
 #Twitter {
 
@@ -109,6 +103,7 @@ body {
     font-family: AmogusFont;
 }
 
+
 .NewsElement article img {
 
     margin: 25px;
@@ -130,6 +125,7 @@ body {
 }
 
 .popup .content {
+    overflow-y:scroll;
     position: fixed;
     border-radius: 50px;
     top: 50%;
@@ -143,6 +139,31 @@ body {
     padding: 20px;
     box-sizing: border-box;
 }
+.content .articleTitle{
+    color: orange;
+    font-family: amogusfont;
+}
+.content .articleText{
+    margin: 50px;
+    font-size: 20px;
+    text-align: left;
+    font-family: amogusfont;
+    white-space: pre-wrap;
+}
+
+.content .date{
+    margin-top: 25px;
+    font-family: amogusfont;
+    color: rgb(228, 228, 228); 
+}
+
+.textBackground{
+    background-color: rgb(228, 228, 228);
+    border-radius: 50px;
+    margin: 25px;
+    min-height: 500px;
+    padding: 10px;
+}
 
 .popup.active .overlay {
     display: block;
@@ -155,9 +176,10 @@ body {
 
 .popup .close-btn {
     cursor: pointer;
-    position: absolute;
+    position:sticky;
     right: 20px;
     top: 20px;
+    float:right;
     width: 50px;
     height: 50px;
     background: orange;
@@ -167,9 +189,9 @@ body {
     line-height: 50px;
     border-radius: 50px;
     text-align: center;
-
-
 }
+
+
 
 #Twitter {
 
