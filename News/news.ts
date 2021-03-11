@@ -30,7 +30,7 @@ fetch("./NewsJson.json")
         var article = document.createElement("article");
         var image = document.createElement("img");
 
-        image.src = "Images/OIP.jfif"
+        image.src = "/Images/OIP.jfif"
 
         var h2 = document.createElement("h2");
 
@@ -42,8 +42,7 @@ fetch("./NewsJson.json")
 
         title.textContent = data.Title[i];
         h2.textContent = data.Description[i];
-        image.src = `/Images/NewsCoverImages/${data.FileName[i]}`
-        console.log(image);
+        image.src = `/Images/NewsCoverImages/${data.FileName[i]}`       
         date.textContent = timeSince(data.date[i]);
 
 

@@ -19,7 +19,7 @@ fetch("./NewsJson.json")
         div.appendChild(titleDiv);
         article = document.createElement("article");
         image = document.createElement("img");
-        image.src = "Images/OIP.jfif";
+        image.src = "/Images/OIP.jfif";
         h2 = document.createElement("h2");
         article.appendChild(h2);
         article.appendChild(image);
@@ -27,7 +27,7 @@ fetch("./NewsJson.json")
         document.getElementById("News").appendChild(div);
         title.textContent = data.Title[i];
         h2.textContent = data.Description[i];
-        image.src = "Images/NewsCoverImages/" + data.FileName[i];
+        image.src = "/Images/NewsCoverImages/" + data.FileName[i];
         date.textContent = timeSince(data.date[i]);
         function timeSince(date) {
             var monthNames = ["January", "February", "March", "April", "May", "June",
