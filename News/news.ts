@@ -42,8 +42,8 @@ fetch("./NewsJson.json")
 
         title.textContent = data.Title[i];
         h2.textContent = data.Description[i];
-        image.src = `Images/CoverImages/${data.FileName[i]}`
-     
+        image.src = `/Images/NewsCoverImages/${data.FileName[i]}`
+        console.log(image);
         date.textContent = timeSince(data.date[i]);
 
 
