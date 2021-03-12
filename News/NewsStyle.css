@@ -125,7 +125,8 @@ body {
 .popup .content {
     overflow-y:scroll;
     position: fixed;
-    border-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
