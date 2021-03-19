@@ -2,7 +2,7 @@
 fetch("./NewsJson.json")
 .then(response => response.json())
 .then(data =>{
-    for (let i = data.Title.length -1; i >= 0; i--) {
+    for (let i = data.Articles.length -1; i >= 0; i--) {
                
         // (let i = data.Title.length; i >= 0; i--
         // 
@@ -40,10 +40,10 @@ fetch("./NewsJson.json")
 
         document.getElementById("News")!.appendChild(div);
 
-        title.textContent = data.Title[i];
-        h2.textContent = data.Description[i];
-        image.src = `/Images/NewsCoverImages/${data.CoverImageFileName[i]}`       
-        date.textContent = timeSince(data.date[i]);
+        title.textContent = data.Articles[i].Title;
+        h2.textContent =  data.Articles[i].Description;
+        image.src = `/Images/NewsCoverImages/${ data.Articles[i].CoverImageFileName}`       
+        date.textContent = timeSince (data.Articles[i].Date);
 
 
         function timeSince(date : string) {

@@ -1,7 +1,7 @@
 fetch("./NewsJson.json")
     .then(response => response.json())
     .then(data => {
-        for (let i = 0; i < data.Title.length; i++) {
+        for (let i = 0; i < data.Articles.length; i++) {
 
             var template = document.getElementsByTagName("template")[0] !;
             var clone = template.content.cloneNode(true);
@@ -9,10 +9,10 @@ fetch("./NewsJson.json")
             document.body.appendChild(clone);
 
             document.getElementById("popup-null") !.id = `popup-${i}`;
-            document.getElementsByClassName("articleTitle")[i]!.textContent = data.Title[i];        
-            document.getElementsByClassName("articleText")[i]!.innerHTML = data.Text[i];
+            document.getElementsByClassName("articleTitle")[i]!.textContent = data.Articles[i].Title;        
+            document.getElementsByClassName("articleText")[i]!.innerHTML = data.Articles[i].Text;
 
-            document.getElementsByClassName("date")[i]!.innerHTML = getTime(data.date[i]);
+            document.getElementsByClassName("date")[i]!.innerHTML = getTime(data.Articles[i].Date);
         }
 
     });

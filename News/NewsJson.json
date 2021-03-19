@@ -1,18 +1,24 @@
 {
-  "Title": [
-    "Github Brokey"
-  ],
-  "Description": [
-    "Work"
-  ],
-  "Text": [
-    "Now"
-  ],
-  "date": [
-    "12/03/2021 23:26:39"
-  ],
-  "CoverImageFileName": [
-    "220px-Green_Day_-_Redundant_cover - Copy - Copy.jpg"
-  ],
-  "ArticleImagesFileName": []
+  "Articles": [
+    {
+      "Title": "Store as a class",
+      "Description": "please this would be amazing, do it for the vine",
+      "Text": "Awesome saucen\n<img src=\"/Images/NewsCoverImages/Store as a class/200303-empty-shelves-california-ew-558p_6f80f5f900febad79819eb4824cda1f7.fit-760w.jpg\" style=\"height:720px;width:1280px;\">\nYes",
+      "Date": "19/03/2021 22:40:19",
+      "CoverImageFileName": "32257f65437f50ed9c1996c0e82884e2 - Copy.jpg",
+      "ArticleImageFileNames": [
+        "C:\\Users\\Willy\\Downloads\\200303-empty-shelves-california-ew-558p_6f80f5f900febad79819eb4824cda1f7.fit-760w.jpg"
+      ]
+    },
+    {
+      "Title": "Hey",
+      "Description": "No",
+      "Text": "YES",
+      "Date": "19/03/2021 22:41:09",
+      "CoverImageFileName": "Redundant.jpg",
+      "ArticleImageFileNames": [
+        "C:\\Users\\Willy\\Downloads\\200303-empty-shelves-california-ew-558p_6f80f5f900febad79819eb4824cda1f7.fit-760w.jpg"
+      ]
+    }
+  ]
 }
