@@ -53,9 +53,57 @@
     {
       "Title": "WOAH",
       "Description": "THIS IS AWESOME",
-      "Text": "<span style=\"color:orange;\">I CAN HIGHLIGHT</span> I THINK I'M GOING TO DIE",
+      "Text": "<span style=\"color:orange;\"><strong>I CAN HIGHLIGHT</strong></span> I THINK I'M GOING TO DIE",
       "Date": "20/03/2021 23:50:33",
       "CoverImageFileName": "Screenshot 2020-10-21 162614 - Copy.png",
+      "ArticleImageFileNames": []
+    },
+    {
+      "Title": "Too Dumb to Die",
+      "Description": "Looking for a buzz, but all i got was santa cluase",
+      "Text": "<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\n\nGreen Day are so awesome sauce\n\n<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\nGreen Day are so awesome sauce\n",
+      "Date": "23/03/2021 22:04:42",
+      "CoverImageFileName": "32257f65437f50ed9c1996c0e82884e2 - Copy.jpg",
+      "ArticleImageFileNames": []
+    },
+    {
+      "Title": "Too Dumb to Die",
+      "Description": "Looking for a buzz, but all i got was santa cluase",
+      "Text": "<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\n\nGreen Day are so awesome sauce\n\n<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\nGreen Day are so awesome sauce\n",
+      "Date": "23/03/2021 22:04:42",
+      "CoverImageFileName": "32257f65437f50ed9c1996c0e82884e2 - Copy.jpg",
+      "ArticleImageFileNames": []
+    },
+    {
+      "Title": "Hey",
+      "Description": "Looking for a buzz, but all i got was santa cluase",
+      "Text": "<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\n\nGreen Day are so awesome sauce\n\n<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\nGreen Day are so awesome sauce\n",
+      "Date": "23/03/2021 22:04:42",
+      "CoverImageFileName": "32257f65437f50ed9c1996c0e82884e2 - Copy.jpg",
+      "ArticleImageFileNames": []
+    },
+    {
+      "Title": "Hey",
+      "Description": "Looking for a buzz, but all i got was santa cluase",
+      "Text": "<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\n\nGreen Day are so awesome sauce\n\n<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\nGreen Day are so awesome sauce\n",
+      "Date": "23/03/2021 22:04:42",
+      "CoverImageFileName": "32257f65437f50ed9c1996c0e82884e2 - Copy.jpg",
+      "ArticleImageFileNames": []
+    },
+    {
+      "Title": "Hey",
+      "Description": "Looking for a buzz, but all i got was santa cluase",
+      "Text": "<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\n\nGreen Day are so awesome sauce\n\n<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\nGreen Day are so awesome sauce\n",
+      "Date": "23/03/2021 22:04:42",
+      "CoverImageFileName": "32257f65437f50ed9c1996c0e82884e2 - Copy.jpg",
+      "ArticleImageFileNames": []
+    },
+    {
+      "Title": "Hey",
+      "Description": "Looking for a buzz, but all i got was santa cluase",
+      "Text": "<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\n\nGreen Day are so awesome sauce\n\n<span style=\"color:orange;\"><strong> Green Day, they're pretty cool</strong></span>\nGreen Day are so awesome sauce\n",
+      "Date": "23/03/2021 22:04:42",
+      "CoverImageFileName": "32257f65437f50ed9c1996c0e82884e2 - Copy.jpg",
       "ArticleImageFileNames": []
     }
   ]

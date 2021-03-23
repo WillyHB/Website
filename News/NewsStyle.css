@@ -11,6 +11,13 @@
 body {
     background-color: rgb(246, 246, 246);
     margin: 0;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #News,
@@ -208,4 +215,34 @@ footer div {
     height: 250px;
 
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.267);
+}
+
+#LoadMoreParent{
+    text-align: center;
+}
+
+#LoadMore{
+
+
+    color: orange;
+    margin-bottom: 50px;
+    display: inline-block;
+
+    font-family: AmogusFont;
+    font-size: 50px;
+
+    text-decoration: none;
+    text-shadow: 0 4px rgb(230, 129, 15);
+
+    transition: transform 250ms ease;
+}
+
+#LoadMore:hover, #LoadMore:focus{
+
+    transform: scale(1.1);
+    color: rgb(248, 154, 3);
+}
+
+#LoadMore:active{
+    transform: scale(0.99);
 }
