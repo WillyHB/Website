@@ -2,7 +2,7 @@ fetch("./NewsJson.json")
     .then(response => response.json())
     .then(data => {
         for (let i = 0; i < data.Articles.length; i++) {
-
+            
             var template = document.getElementsByTagName("template")[0] !;
             var clone = template.content.cloneNode(true);
 
@@ -14,7 +14,6 @@ fetch("./NewsJson.json")
 
             document.getElementsByClassName("date")[i]!.innerHTML = getTime(data.Articles[i].Date);
         }
-
     });
 
 var index: number = 0;

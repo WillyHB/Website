@@ -1,4 +1,4 @@
-
+var Articles : any;
 var currentlyLoaded : number;
 
 
@@ -6,20 +6,26 @@ fetch("./NewsJson.json")
 .then(response => response.json())
 .then(data =>{
     
-  currentlyLoaded = data.Articles.length;
-  
+  currentlyLoaded = data.Articles.length
+  ;
+  Articles = data.Articles;
 
-  loadArticle(4, data);
+  LoadArticle(4);
 });
 
+function LoadMoreClick(){
+   LoadArticle(4);
+}
 
-function loadArticle(amount: number, data : any){
+function LoadArticle(amount: number){
+
+  if (currentlyLoaded - amount < 0){
+    amount = currentlyLoaded;
+  }
 
   var amountCalc = currentlyLoaded - amount;
 
-  for (let i = data.Articles.length -1; i >= amountCalc; i--){
-
-  currentlyLoaded - amount;
+  for (let i = currentlyLoaded -1; i >= amountCalc; i--){
 
   var div = document.createElement("div");
 
@@ -55,10 +61,16 @@ function loadArticle(amount: number, data : any){
 
   document.getElementById("News")!.insertBefore(div, document.getElementById("LoadMoreParent"));
 
-  title.textContent = data.Articles[i].Title;
-  h2.textContent =  data.Articles[i].Description;
-  image.src = `/Images/NewsCoverImages/${ data.Articles[i].CoverImageFileName}`       
-  date.textContent = timeSince(data.Articles[i].Date);
+  title.textContent = Articles[i].Title;
+  h2.textContent =  Articles[i].Description;
+  image.src = `/Images/NewsCoverImages/${ Articles[i].CoverImageFileName}`       
+  date.textContent = timeSince(Articles[i].Date);
+  } 
+
+  currentlyLoaded -= amount;
+
+  if (currentlyLoaded <= 0){
+    document.getElementById("LoadMoreParent")!.remove();
   } 
 }
 
@@ -113,11 +125,7 @@ function timeSince(date : string) {
       return Math.floor(interval) + " minutes ago";
     }
 
-    
     return Math.floor(seconds) + " seconds ago";
-  }
-  var aDay = 24*60*60*1000;   
-
 }  
 
 
