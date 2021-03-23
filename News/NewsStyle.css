@@ -246,3 +246,12 @@ footer div {
 #LoadMore:active{
     transform: scale(0.99);
 }
+
+#NewsTitle{
+    text-align: center;
+    font-family: AmogusFont;
+    margin-top: 25px;
+
+    font-size: 50px;
+    color: orange;
+}

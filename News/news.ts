@@ -17,7 +17,7 @@ function LoadMoreClick(){
    LoadArticle(4);
 }
 
-function LoadArticle(amount: number){
+async function LoadArticle(amount: number){
 
   if (currentlyLoaded - amount < 0){
     amount = currentlyLoaded;
@@ -41,7 +41,7 @@ function LoadArticle(amount: number){
 
   date.textContent = "27/02/2021"
 
-  title.textContent = "This was made with Typescript :)"
+  title.textContent = "Placeholder Title"
 
   titleDiv.appendChild(title);
   titleDiv.appendChild(date);
@@ -127,5 +127,3 @@ function timeSince(date : string) {
 
     return Math.floor(seconds) + " seconds ago";
 }  
-
-
