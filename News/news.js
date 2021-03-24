@@ -72,8 +72,8 @@ function LoadArticle(amount) {
                 image = document.createElement("img");
                 image.src = "/Images/OIP.jfif";
                 h2 = document.createElement("h2");
-                article.appendChild(h2);
                 article.appendChild(image);
+                article.appendChild(h2);
                 div.appendChild(article);
                 document.getElementById("News").insertBefore(div, document.getElementById("LoadMoreParent"));
                 title.textContent = Articles[i].Title;

@@ -55,8 +55,8 @@ async function LoadArticle(amount: number){
 
   var h2 = document.createElement("h2");
 
-  article.appendChild(h2);
   article.appendChild(image);
+  article.appendChild(h2);
   div.appendChild(article);
 
   document.getElementById("News")!.insertBefore(div, document.getElementById("LoadMoreParent"));
