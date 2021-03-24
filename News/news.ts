@@ -65,6 +65,8 @@ async function LoadArticle(amount: number){
   h2.textContent =  Articles[i].Description;
   image.src = `/Images/NewsCoverImages/${ Articles[i].CoverImageFileName}`       
   date.textContent = timeSince(Articles[i].Date);
+
+  GeneratePopup(i);
   } 
 
   currentlyLoaded -= amount;

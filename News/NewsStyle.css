@@ -3,6 +3,60 @@
     margin: 0;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+    #News, #Twitter{
+        margin: 100px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+    #News, #Twitter{
+        margin: 25px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    #News, #Twitter{
+        margin: 25px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+    #News, #Twitter{
+        margin: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px)
+ {
+    #News, #Twitter{
+        margin: 30px;
+    }
+}
+
+@media only screen and (min-width: 1070px)
+ {
+    #News, #Twitter{
+        margin: 57px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 3220px)
+ {
+    #News, #Twitter{
+        margin: 100px;
+    }
+}
+
 @font-face {
     font-family: AmogusFont;
     src: url("/Fonts/VCR_OSD_MONO.ttf")
@@ -10,7 +64,7 @@
 
 body {
     background-color: rgb(246, 246, 246);
-    margin: 0;
+    margin: 0;   
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -24,7 +78,6 @@ body {
 #Twitter {
 
     border-radius: 50px;
-    margin: 100px;
     min-height: 2500px;
 
     float: left;
@@ -37,7 +90,7 @@ body {
 
 #News {
     margin-right: 0;
-    width: 2050px;
+    width: 61%;
 }
 
 .NewsElement {
@@ -46,7 +99,7 @@ body {
     margin: 100px;
     border-radius: 50px;
     background-color: rgb(246, 246, 246);
-    height: 500px;
+    height: 500%;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.267);
 
 
@@ -102,9 +155,9 @@ body {
 .NewsElement article h2 {
 
     margin: 50px;
-    font-size: 28px;
+    font-size: 175%;
     float: right;
-    width: 1150px;
+    width: 60%;
     font-family: AmogusFont;
 }
 
@@ -202,7 +255,7 @@ body {
 
 #Twitter {
 
-    width: 1018px;
+    width: 30%;
 }
 
 .twitter-timeline {

@@ -1,21 +1,32 @@
+var Articles : any;
+
 fetch("./NewsJson.json")
     .then(response => response.json())
     .then(data => {
-        for (let i = 0; i < data.Articles.length; i++) {
-            
-            var template = document.getElementsByTagName("template")[0] !;
-            var clone = template.content.cloneNode(true);
 
-            document.body.appendChild(clone);
-
-            document.getElementById("popup-null") !.id = `popup-${i}`;
-            document.getElementsByClassName("articleTitle")[i]!.textContent = data.Articles[i].Title;        
-            document.getElementsByClassName("articleText")[i]!.innerHTML = data.Articles[i].Text;
-
-            document.getElementsByClassName("date")[i]!.innerHTML = getTime(data.Articles[i].Date);
-        }
+        Articles = data.Articles;
     });
+    
+function GeneratePopup(i : number){
+    
+    var template = document.getElementsByTagName("template")[0]!;
+    var clone = template.content.cloneNode(true);
+    
 
+    document.body.appendChild(clone);
+
+    document.getElementById("popup-null")!.id = `popup-${i}`;
+
+    for (var index = 0; index < document.getElementsByClassName("articleTitle").length; index++){
+
+        if (document.getElementsByClassName("articleTitle")[index].parentElement!.parentElement!.id == `popup-${i}`){
+            document.getElementsByClassName("articleTitle")[index]!.textContent = Articles[i].Title;        
+            document.getElementsByClassName("articleText")[index]!.innerHTML = Articles[i].Text;
+        
+            document.getElementsByClassName("date")[index]!.innerHTML = getTime(Articles[i].Date);
+        }
+    }
+}
 var index: number = 0;
 
 function Clicked(i: number) {
@@ -37,7 +48,9 @@ function escaped()
 {
     document.body.style.overflow = "auto";
     window.removeEventListener;
+
     document.getElementById(`popup-${index}`)!.classList.remove("active");
+
 }
 
 function getTime(date : string){

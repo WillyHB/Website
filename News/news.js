@@ -80,6 +80,7 @@ function LoadArticle(amount) {
                 h2.textContent = Articles[i].Description;
                 image.src = "/Images/NewsCoverImages/" + Articles[i].CoverImageFileName;
                 date.textContent = timeSince(Articles[i].Date);
+                GeneratePopup(i);
             };
             for (i = currentlyLoaded - 1; i >= amountCalc; i--) {
                 _loop_1(i);
