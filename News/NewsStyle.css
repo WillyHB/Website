@@ -2,55 +2,68 @@
     padding: 0;
     margin: 0;
 }
-/*
+
 @media only screen and (max-width: 600px) 
 {
-    #News, #Twitter{
-        margin: 100px;
-    }
+
 }
 
 @media only screen and (min-width: 600px) 
 {
-    #News, #Twitter{
-        margin: 25px;
-    }
+
 }
 
 @media only screen and (min-width: 768px) 
 {
-    #News, #Twitter{
-        margin: 25px;
-    }
+
 }
 
 @media only screen and (min-width: 992px) 
 {
-    #News, #Twitter{
-        margin: 20px;
-    }
+
 }
 
 @media only screen and (min-width: 1000px)
- {
-    #News, #Twitter{
-        margin: 30px;
+{
+    .Date, .Title{
+        text-align: center;
+        font-size: 15px;
+        float: none;
+        
+        line-height: 50px;
+    }
+
+    .NewsElement article h2{
+        font-size: 15px;
     }
 }
 
 @media only screen and (min-width: 1070px)
- {
-    #News, #Twitter{
-        margin: 57px;
-    }
+{
+
 }
 
 @media only screen and (min-width: 3220px)
- {
-    #News, #Twitter{
-        margin: 100px;
+{
+    .Date, .Title{
+
+        line-height: 50px;
+        margin: 25px;
+        font-size: 25px;
     }
-}*/
+
+    .Date{
+        float: right;
+    }
+
+    .Title{
+        float: left;
+    }
+
+    .NewsElement article h2{
+        font-size: 26px;
+    }
+}
 
 @font-face {
     font-family: AmogusFont;
@@ -119,23 +132,12 @@ body {
 }
 
 .Title {
-
-    float: left;
-
-    line-height: 50px;
-    margin: 25px;
-
     color: orange;
     font-family: AmogusFont;
 
 }
 
 .Date {
-    float: right;
-
-    line-height: 50px;
-    margin: 25px;
-
     color: orange;
     font-family: AmogusFont;
 }
@@ -146,14 +148,13 @@ body {
 
     background-color: rgb(228, 228, 228);
 
-    min-height: 100px;
+    min-height: 120px;
     
 }
 
 .NewsElement article h2 {
 
     margin: 50px;
-    font-size: 175%;
     float: right;
     width: 60%;
     font-family: AmogusFont;
