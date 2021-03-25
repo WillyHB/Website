@@ -203,7 +203,7 @@ body {
 .NewsElement article img{
 
     margin: 1vw;
-    border-radius: 50px;
+    border-radius: 1.5vw;
     vertical-align: middle;    
     width: 35%;
 }
