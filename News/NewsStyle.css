@@ -171,22 +171,11 @@ body {
     transform: scale(1);
 }
 
-.Title {
-    color: orange;
-    font-family: AmogusFont;
-
-}
-
-.Date {
-    color: orange;
-    font-family: AmogusFont;
-}
-
 .NewsElement article h2 {
 
     font-size: 0.8vw;    
-        margin: 0.3vw;   
-        margin-top: 2vw;
+    margin: 0.3vw;   
+    margin-top: 2vw;
 
     float: right;
     width: 60%;
@@ -195,9 +184,12 @@ body {
 
 .Date, .Title{
 
-    line-height: 50px;
+    line-height: 1vw;
     margin: 1vw;
     font-size: 0.8vw;
+
+    color: orange;
+    font-family: AmogusFont;
 }
 
 .Date{
