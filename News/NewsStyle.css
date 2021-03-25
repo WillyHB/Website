@@ -2,33 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
+/*
 @media only screen and (min-width: 320px) 
 {
-    .Date, .Title{
-        text-align: center;
-        font-size: 15px;
-        float: none;
-        
-        line-height: 30px;
-    }
-
-    .NewsElement article h2{
-        font-size: 10px;    
-        margin: 10px;   
-    }
-
-    .NewsElement article img {
-
-        border-radius: 50px;
-        text-align: center;
-
-        margin: 25px;
-        
-        height: auto;
-        width: 27%;
-    }
-
     .NewsElement div {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
@@ -42,30 +18,6 @@
 
 @media only screen and (min-width: 600px) 
 {
-    .Date, .Title{
-        text-align: center;
-        font-size: 15px;
-        float: none;
-        
-        line-height: 30px;
-    }
-
-    .NewsElement article h2{
-        font-size: 9.5px;    
-        margin: 10px;   
-    }
-
-    .NewsElement article img {
-
-        border-radius: 50px;
-        text-align: center;
-
-        margin: 25px;
-        
-        height: auto;
-        width: 27%;
-    }
-
     .NewsElement div {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
@@ -79,30 +31,6 @@
 
 @media only screen and (min-width: 768px) 
 {
-    .Date, .Title{
-        text-align: center;
-        font-size: 15px;
-        float: none;
-        
-        line-height: 30px;
-    }
-
-    .NewsElement article h2{
-        font-size: 9px;    
-        margin: 10px;   
-    }
-
-    .NewsElement article img {
-
-        border-radius: 50px;
-        text-align: center;
-
-        margin: 25px;
-        
-        height: auto;
-        width: 27%;
-    }
-
     .NewsElement div {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
@@ -116,30 +44,6 @@
 
 @media only screen and (min-width: 1024px)
 {
-    .Date, .Title{
-        text-align: center;
-        font-size: 15px;
-        float: none;
-        
-        line-height: 30px;
-    }
-
-    .NewsElement article h2{
-        font-size: 9.6px;    
-        margin: 10px;   
-    }
-
-    .NewsElement article img {
-
-        border-radius: 50px;
-        text-align: center;
-
-        margin: 25px;
-        
-        height: auto;
-        width: 27%;
-    }
-
     .NewsElement div {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
@@ -153,30 +57,6 @@
 
 @media only screen and (min-width: 1440px)
 {
-    .Date, .Title{
-        text-align: center;
-        font-size: 15px;
-        float: none;
-        
-        line-height: 30px;
-    }
-
-    .NewsElement article h2{
-        font-size: 13px;    
-        margin: 10px;   
-    }
-
-    .NewsElement article img {
-
-        border-radius: 50px;
-        text-align: center;
-
-        margin: 25px;
-        
-        height: auto;
-        width: 27%;
-    }
-
     .NewsElement div {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
@@ -189,33 +69,7 @@
 }
 
 @media only screen and (min-width: 1920px)
-{
-    .Date, .Title{
-
-        line-height: 25px;
-        margin: 25px;
-        font-size: 20px;
-    }
-
-    .Date{
-        float: right;
-    }
-
-    .Title{
-        float: left;
-    }
-
-    .NewsElement article h2{
-        font-size: 16px;
-        margin: 10px;
-    }
-    
-    .NewsElement article img {
-
-        margin: 25px;    
-        vertical-align: middle;   
-    }
-
+{   
     .NewsElement div {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
@@ -229,32 +83,6 @@
 
 @media only screen and (min-width: 2560px)
 {
-    .Date, .Title{
-
-        line-height: 25px;
-        margin: 25px;
-        font-size: 20px;
-    }
-
-    .Date{
-        float: right;
-    }
-
-    .Title{
-        float: left;
-    }
-
-    .NewsElement article h2{
-        font-size: 21px;
-        margin: 10px;
-    }
-    
-    .NewsElement article img {
-
-        margin: 25px;    
-        vertical-align: middle;   
-    }
-
     .NewsElement div {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
@@ -268,32 +96,6 @@
 
 @media only screen and (min-width: 3220px)
 {
-    .Date, .Title{
-
-        line-height: 50px;
-        margin: 25px;
-        font-size: 25px;
-    }
-
-    .Date{
-        float: right;
-    }
-
-    .Title{
-        float: left;
-    }
-
-    .NewsElement article h2{
-        font-size: 26px;
-        margin: 50px;
-    }
-    
-    .NewsElement article img {
-
-        margin: 25px;
-        vertical-align: middle;    
-    }
-
     .NewsElement div {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
@@ -303,7 +105,7 @@
         min-height: 100px;
         
     }
-}
+}*/
 
 @font-face {
     font-family: AmogusFont;
@@ -343,10 +145,10 @@ body {
 }
 
 .NewsElement {
-
+    
     position: relative;
     margin: 4%;
-    border-radius: 50px;
+    border-radius: 1.5vw;
     background-color: rgb(246, 246, 246);
     
     height: 500%;
@@ -367,8 +169,6 @@ body {
 
 .NewsElement:active {
     transform: scale(1);
-
-
 }
 
 .Title {
@@ -384,10 +184,45 @@ body {
 
 .NewsElement article h2 {
 
+    font-size: 0.8vw;    
+        margin: 0.3vw;   
+        margin-top: 2vw;
 
     float: right;
     width: 60%;
     font-family: AmogusFont;
+}
+
+.Date, .Title{
+
+    line-height: 50px;
+    margin: 1vw;
+    font-size: 0.8vw;
+}
+
+.Date{
+    float: right;
+}
+
+.Title{
+    float: left;
+}
+
+.NewsElement article img{
+
+    margin: 1vw;
+    border-radius: 50px;
+    vertical-align: middle;    
+    width: 35%;
+}
+
+.NewsElement div {
+    border-top-left-radius: 1.5vw;
+    border-top-right-radius: 1.5vw;
+
+    background-color: rgb(228, 228, 228);
+
+    height: 3vw;    
 }
 
 .popup .overlay {
