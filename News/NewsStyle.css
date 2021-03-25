@@ -227,7 +227,7 @@
     }
 }
 
-@media only screen and (min-width: 3220px)
+@media only screen and (min-width: 3440px)
 {
     .Date, .Title{
 
@@ -308,7 +308,8 @@ body {
     position: relative;
     margin: 4%;
     border-radius: 50px;
-    background-color: rgb(246, 246, 246);
+    /*background-color: rgb(246, 246, 246);*/
+    background-color: green;
     height: 500%;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.267);
 
