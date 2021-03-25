@@ -11,7 +11,11 @@
 #banner{
     margin-top: 20px;
     width: 500px;
-}
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
 nav{
     background-color: #ffcd60;
