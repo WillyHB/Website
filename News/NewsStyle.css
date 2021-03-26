@@ -178,7 +178,6 @@ body {
     display: inline-block;
     vertical-align: middle;
     
-  
     width: 60%;
     font-family: AmogusFont;
 }
@@ -329,10 +328,10 @@ footer div {
     display: inline-block;
 
     font-family: AmogusFont;
-    font-size: 50px;
+    font-size: 2vw;
 
     text-decoration: none;
-    text-shadow: 0 4px rgb(230, 129, 15);
+    text-shadow: 0 0.15vw rgb(230, 129, 15);
 
     transition: transform 250ms ease;
 }
@@ -350,8 +349,8 @@ footer div {
 #NewsTitle{
     text-align: center;
     font-family: AmogusFont;
-    margin-top: 25px;
+    margin-top: 2vw;
 
-    font-size: 50px;
+    font-size: 2vw;
     color: orange;
 }
