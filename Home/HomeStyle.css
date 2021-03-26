@@ -1,20 +1,63 @@
+
 @font-face {
     font-family: AmogusFont;
     src: url("/Fonts/VCR_OSD_MONO.ttf")
 }
 
+@keyframes in {
+    from {
+        top: -25px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+@keyframes out {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        top: 25px;
+    }
+}
+.cycleable {
+    position: relative;
+    display: inline-block;
+    transition: width 500ms;
+}
+.in {
+    animation-name: in;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    position: absolute;
+    left: 0px;
+    transform: translateY(-78%);
+    white-space: nowrap;
+}
+.out {
+    animation-name: out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    position: absolute;
+    left: 0px;
+    transform: translateY(-78%);
+    white-space: nowrap;
+}
 
-#title, #profession{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+h3{
+    display: block;
+    margin-top: 5vw;
     text-align: center;
     min-height: 100vh;
-    line-height: 12vh;
+    line-height: 4vh;
+
 
     font-family: AmogusFont;
-    color: rgb(246, 246, 246);
-    font-size: 2vw;
+    color: rgb(238, 238, 238);
+    font-size: 1vw;
+    
 }
