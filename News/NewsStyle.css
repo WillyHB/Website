@@ -174,10 +174,11 @@ body {
 .NewsElement article h2 {
 
     font-size: 0.8vw;    
-    margin: 0.3vw;   
-    margin-top: 2vw;
 
-    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 18px;
+  
     width: 60%;
     font-family: AmogusFont;
 }
