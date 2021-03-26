@@ -1,0 +1,20 @@
+@font-face {
+    font-family: AmogusFont;
+    src: url("/Fonts/VCR_OSD_MONO.ttf")
+}
+
+
+#title, #profession{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    line-height: 12vh;
+
+    font-family: AmogusFont;
+    color: rgb(246, 246, 246);
+    font-size: 2vw;
+}
