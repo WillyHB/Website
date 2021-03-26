@@ -52,7 +52,6 @@ h3{
     display: block;
     margin-top: 5vw;
     text-align: center;
-    min-height: 100vh;
     line-height: 4vh;
 
 
@@ -60,4 +59,24 @@ h3{
     color: rgb(238, 238, 238);
     font-size: 1vw;
     
+}
+
+ul{
+    display: block;
+    width: 20vw;
+    margin: 0 auto;
+}
+
+li{
+
+    list-style-type: none;
+    width: 5vw;
+    float: left;
+
+    transition:  250ms ease;
+}
+
+
+li:active{
+    transform: scale(0.9);
 }
