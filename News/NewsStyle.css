@@ -3,6 +3,33 @@
     margin: 0;
 }
 
+@media only screen and (max-device-width : 425px) {
+    #Twitter{
+        display: none;
+    }
+
+    #News{
+        width: 95%;
+    }
+
+    }
+
+    @media only screen and (min-device-width: 425.1px){  
+        #News{
+            width: 61%;
+        }
+
+        #Twitter{
+
+            width: 30%;
+            display: block;
+
+        }
+    }
+
+
+
+
 @font-face {
     font-family: AmogusFont;
     src: url("/Fonts/VCR_OSD_MONO.ttf")
@@ -20,8 +47,7 @@ body {
     user-select: none;
 }
 
-#News,
-#Twitter {
+#News, #Twitter{
 
     margin: 3%;
     border-radius: 50px;
@@ -30,15 +56,16 @@ body {
     float: left;
     background-color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.267);
-    display: block;
+    
 
 }
-
 
 #News {
+    display: block;
     margin-right: 0;
-    width: 61%;
+
 }
+
 
 .NewsElement {
     
@@ -191,13 +218,6 @@ body {
     line-height: 60px;
     border-radius: 50px;
     text-align: center;
-}
-
-
-
-#Twitter {
-
-    width: 30%;
 }
 
 .twitter-timeline {
