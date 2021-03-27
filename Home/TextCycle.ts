@@ -25,7 +25,7 @@ const _Cycleable_ = (() => {
             let idx = 0,
                 its = 0,
                 shouldRemove = false;
-            el.appendChild(newElem({ type: 'span', text: items[idx] }));
+                el.appendChild(newElem({ type: 'span', text: items[idx] }));
             setTimeout(() => {
                 setInterval(() => {
                     if (++idx >= items.length) idx = 0;

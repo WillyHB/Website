@@ -48,22 +48,27 @@
     white-space: nowrap;
 }
 
+body{
+    background-color: rgb(246, 246, 246);
+}
+
 h3{
     display: block;
     margin-top: 5vw;
-    text-align: center;
+
     line-height: 4vh;
 
 
     font-family: AmogusFont;
-    color: rgb(238, 238, 238);
-    font-size: 1vw;
+
+    color: #ffcd60;
+    font-size: 1.5vw;
     
 }
 
 ul{
     display: block;
-    width: 20vw;
+
     margin: 0 auto;
 }
 
@@ -79,4 +84,16 @@ li{
 
 li:active{
     transform: scale(0.9);
+}
+
+svg{
+    fill: rgb(238, 238, 238);
+}
+
+#socials{
+    margin-top: 2vh;
+    display: inline-block;
+    padding: 0.5vw;
+    background-color: white;
+    border-radius: 1.5vw
 }
