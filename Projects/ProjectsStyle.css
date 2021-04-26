@@ -39,7 +39,8 @@ body{
 
 }
 
-#Projects h2{
+#Projects a{
+    text-decoration: none;
     display: block;
     margin: 0 auto;
     width: 20vw;

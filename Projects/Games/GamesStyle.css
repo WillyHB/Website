@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: AmogusFont;
+    src: url("/Fonts/VCR_OSD_MONO.ttf")
+}
+
+body{
+    background-color: rgb(246, 246, 246);
+
+    margin: 0;   
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+#Games{
+    display: block;
+    margin-right: 0;
+
+
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.267);
+
+    background-color: white;
+    margin: 5vh;
+    min-height: 2500px;
+    border-radius: 1.5vh;   
+}
+
+#Header{
+    text-align: center;
+    font-family: AmogusFont;
+    padding-top: 2vh;
+
+    font-size: 2vw;
+    color: orange;
+}
+
+.Game{
+    position: relative;
+    margin: 4%;
+    border-radius: 1.5vw;
+    background-color: rgb(246, 246, 246);
+    
+    height: 500%;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.267);
+}
+
+.Content{
+    padding: 1vw;
+    vertical-align: middle;
+}
+
+.Title{
+    font-family: AmogusFont;
+
+    font-size: 1vw;
+}
+
+#Games img{
+    height: 10.2vw;
+}
+
+.Description{
+    font-size: 0.8vw;    
+
+    display: inline-block;
+    
+    width: 60%;
+    font-family: AmogusFont;
+}
+
