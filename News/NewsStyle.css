@@ -224,14 +224,6 @@ body {
     width: 20%;
 }
 
-footer div {
-    clear: left;
-    background-color: #ffcd60;
-    height: 250px;
-
-    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.267);
-}
-
 #LoadMoreParent{
     text-align: center;
 }
