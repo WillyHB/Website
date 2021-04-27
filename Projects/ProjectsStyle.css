@@ -22,11 +22,14 @@ body{
     src: url("/Fonts/VCR_OSD_MONO.ttf")
 }
 
+#Projects{
+    min-height: 100vh;
+}
+
 #Projects ul{
     display: block;
     margin: 0 auto;
     margin-top: 5vh;
-
 }
 
 #Projects li{
@@ -35,8 +38,6 @@ body{
     margin-top: 3vh;
 
     border-radius: 1.5vh;
-    
-
 }
 
 #Projects a{
