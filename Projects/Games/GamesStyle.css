@@ -34,7 +34,7 @@ body{
     background-color: white;
     margin: 5vh;
     min-height: 2500px;
-    border-radius: 1.5vh;   
+    border-radius: 1.5vw;
 }
 
 #Header{
@@ -52,8 +52,9 @@ body{
     border-radius: 1.5vw;
     background-color: rgb(246, 246, 246);
     
-    height: 500%;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.267);
+
+    min-height: 35vh;
 }
 
 .Content{
@@ -67,16 +68,61 @@ body{
     font-size: 1vw;
 }
 
-#Games img{
+.CoverImg{
+    border-radius: 1.5vw;
     height: 10.2vw;
+    float: left;
+    margin-right: 1vw;
+}
+
+.Sidebar{
+
+    display: inline-block;
+    
+    width: 70%;
+}
+
+.info{
+    display: inline-block;
+
+    margin-top: 0.5vw;
+    border-radius: 1.5vw;
+    height: 4vw;
+    background: white;
+}
+
+.icon{
+    
+    margin: 0.5vw;
+    width: 3vw;
+    height: 2.5vwvw;
 }
 
 .Description{
     font-size: 0.8vw;    
 
-    display: inline-block;
-    
-    width: 60%;
+
     font-family: AmogusFont;
 }
+
+.Divide{
+    margin: 5vw;
+}
+.Divide h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 0.5vw solid rgb(246, 246, 246); 
+    line-height: 0em;
+    font-size: 1vw;
+    margin: 10px 0 20px; 
+    border-radius: 1.5vw;
+    font-family: AmogusFont;
+    color: rgb(230, 230, 230);
+ } 
+ 
+ .Divide h2 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+  
 
