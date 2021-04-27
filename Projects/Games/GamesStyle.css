@@ -50,28 +50,42 @@ body{
     position: relative;
     margin: 4%;
     border-radius: 1.5vw;
-    background-color: rgb(246, 246, 246);
-    
+    background-color: rgb(246, 246, 246); 
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.267);
 
-    min-height: 35vh;
+    min-height: 14.4vw;
 }
 
 .Content{
-    padding: 1vw;
     vertical-align: middle;
 }
 
-.Title{
-    font-family: AmogusFont;
+.Date, .Title{
 
+    line-height: 0vw;
+    margin: 1vw;
     font-size: 1vw;
+
+    color: orange;
+    font-family: AmogusFont;
 }
+
+.Date{
+    float: right;
+}
+
+.Title{
+    float: left;
+}
+
 
 .CoverImg{
     border-radius: 1.5vw;
-    height: 10.2vw;
+    height: 10vw;
+
     float: left;
+    
+    margin-left: 1vw;
     margin-right: 1vw;
 }
 
@@ -83,12 +97,26 @@ body{
 }
 
 .info{
+
     display: inline-block;
 
-    margin-top: 0.5vw;
+    margin-top: 1vw;
     border-radius: 1.5vw;
     height: 4vw;
     background: white;
+    clear:both;bottom: 100px;
+}
+
+.Head{
+    background-color: rgb(228, 228, 228);
+    color: orange;
+    line-height: 2vw;
+    border-top-left-radius: 1.5vw;
+    border-top-right-radius: 1.5vw;
+    margin: 0 auto;
+
+    height: 2vw;
+    margin-bottom: 1vw;
 }
 
 .icon{
@@ -99,10 +127,20 @@ body{
 }
 
 .Description{
-    font-size: 0.8vw;    
+    font-size: 0.8vw;   
 
 
     font-family: AmogusFont;
+}
+
+.price{
+    float: right;
+    line-height: 4vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-family: AmogusFont;
+    color: orange;
+    font-size: 1vw;
 }
 
 .Divide{
