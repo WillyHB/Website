@@ -23,6 +23,7 @@ body{
 
 #Content{
         
+    padding-top: 1.5vw;
     position: relative;
     z-index: 100px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.267);
@@ -59,16 +60,63 @@ body{
     transition: 50ms ease;
 }
 
-#WillyHB{
-    background: white;
-
-    margin-right: 1.85%;
-}
-
 .tab h2{
     font-family: AmogusFont;
     /*color: orange;*/
     font-size: 1.5vw;
     line-height: 3vw;
     border-bottom: 0.1vw solid rgb(246, 246, 246);
+}
+
+#WillyHB{
+    background: white;
+
+    margin-right: 1.85%;
+}
+
+.Video{
+    margin: 1.5vw;
+    
+    height: 7vw;
+    background: rgb(246, 246, 246);
+    border-radius: 1.5vw;
+}
+
+.Vid{
+    float: left;
+
+    border-radius: 1vw;
+    margin: 1vw;
+    width: 10vw;
+    height: 5vw;
+}
+
+.InfoHeader{
+    padding-top: 1vw;
+}
+
+
+.Title{
+    float: left;
+    color: orange;
+    font-size: 1vw;
+    font-family: AmogusFont;   
+}
+
+.Date{
+    margin-right: 1vw;
+
+    float: right;
+    color: orange; 
+    font-size: 1vw;
+    line-height: 1vw;
+    font-family: AmogusFont;
+}
+
+.Description{
+
+    margin-top: 1.5vw;
+    font-size: 0.8vw;
+    font-family: AmogusFont;
+    color: black;
 }
