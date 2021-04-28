@@ -23,6 +23,8 @@ body{
 
 #Content{
         
+    position: relative;
+    z-index: 100px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.267);
 
     background-color: white;
@@ -36,16 +38,18 @@ body{
 }
 
 #tabs{
+    
     margin: 3%;
     margin-bottom: 0;
 }
 
 .tab{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.267);
     display:inline-block;
 
 
     height: 3vw;
-    background: white;
+    background: rgb(246, 246, 246);
     
     text-align: center;
     width: 49%;
@@ -55,9 +59,15 @@ body{
     transition: 50ms ease;
 }
 
+#WillyHB{
+    background: white;
+
+    margin-right: 1.85%;
+}
+
 .tab h2{
     font-family: AmogusFont;
-    color: orange;
+    /*color: orange;*/
     font-size: 1.5vw;
     line-height: 3vw;
     border-bottom: 0.1vw solid rgb(246, 246, 246);
