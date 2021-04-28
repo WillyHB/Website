@@ -27,12 +27,10 @@ body{
     display: block;
     margin-right: 0;
 
-
-    background-color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.267);
 
     background-color: white;
-    margin: 5vh;
+    margin: 3%;
     min-height: 2500px;
     border-radius: 1.5vw;
 }
