@@ -12,9 +12,9 @@ var active : boolean = true;
 
         console.log(data);
 
-        Title.innerHTML = data["items"][index].title;
-        Date.innerHTML = data["items"][index].date;
-        Description.innerHTML = data["items"][index].description;
+        Title.innerHTML = data["items"][index].snippet.title;
+        Date.innerHTML = data["items"][index].snippet.date;
+        Description.innerHTML = data["items"][index].snippet.description;
     })
   }
   
