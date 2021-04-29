@@ -1,18 +1,22 @@
 var active : boolean = true;
 
-let getSubscribers = () => {
+    let getVideo = (index : number, Title : Element, Date : Element, Description : Element) => {
 
     fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYr_3hWoz2fyvCC0-2jq1Ow&maxResults=50&order=date&key=AIzaSyBVpbA0fb4QuTMURSzOvsb3_Wina-srvuQ`)
     
     .then (response => {    
+        
         return response.json()
     })
     .then (data => {
-        console.log(data["items"][49]);
+
+        console.log(data);
+
+        Title.innerHTML = data["items"][index].title;
+        Date.innerHTML = data["items"][index].date;
+        Description.innerHTML = data["items"][index].description;
     })
   }
-
-  getSubscribers();
   
 function Click(channel : Element){
 
@@ -39,7 +43,7 @@ function Click(channel : Element){
     }
 }
 
-function CreateVid(){
+function CreateVideo(index : number){
 
     var Video = document.createElement("div");
 
@@ -52,8 +56,8 @@ function CreateVid(){
     InfoHeader.className = "InfoHeader";
 
     var Title = document.createElement("h2");
-    Title.className = "Title"
-    Title.textContent = "Test";
+    Title.className = "Title";
+    Title.innerHTML = "hey";
 
     var Date = document.createElement("h2");
     Date.className = "Date";
@@ -72,5 +76,10 @@ function CreateVid(){
     Video.appendChild(InfoHeader);
     Video.appendChild(Description);
 
+    getVideo(index, Title, Date, Description);
+
+
     document.getElementById("Content")!.appendChild(Video);
 }
+
+CreateVideo(2);
