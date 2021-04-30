@@ -20,6 +20,21 @@
 
 </header>
 
+<template>
+    <div class="Video">
+
+        <iframe class="Vid" width="350vw" height="200vw" src="https://www.youtube.com/embed/Oyn_3i73_Z4"></iframe>
+
+        <div class="InfoHeader">
+            <h2 class="Title">Title</h2>
+
+            <h2 class="Date">Apr 5, 2020</h2>
+        </div>
+        
+        <h2 class="Description">This is EPIC</h2> 
+    </div>
+</template>
+
 <div id="tabs">
     <div class="tab" id="WillyHB"  onclick="Click(this)" style="color: orange;">
         <h2>WillyHB</h2>
@@ -32,21 +47,12 @@
 
 <div id="Content">
     
-    <div class="Video">
+    <div id="Videos">
 
-        <iframe class="Vid" width="350vw" height="200vw" src="https://www.youtube.com/embed/Oyn_3i73_Z4"></iframe>
+    </div>
 
-        <div class="InfoHeader">
-            <h2 class="Title">Title</h2>
-
-            <h2 class="Date">Apr 5, 2020</h2>
-        </div>
-        
-        <h2 class="Description">This is EPIC</h2>
-            
-
-
-    
+    <div id="LoadMoreParent">
+        <h2 id="LoadMore" onclick="">LOAD MORE</h2>
     </div>
 
 </div>
@@ -57,7 +63,7 @@
         <button onclick="execute()">execute</button>
     </div>
 </footer>
-</body>
+</body>1
 
 <script src="Videos.js"></script>
 

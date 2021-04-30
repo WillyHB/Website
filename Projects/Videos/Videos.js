@@ -1,6 +1,6 @@
 var active = true;
 var getVideos = function () {
-    fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYr_3hWoz2fyvCC0-2jq1Ow&maxResults=50&order=date&key=AIzaSyBVpbA0fb4QuTMURSzOvsb3_Wina-srvuQ")
+    fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYr_3hWoz2fyvCC0-2jq1Ow&maxResults=10&order=date&key=AIzaSyBVpbA0fb4QuTMURSzOvsb3_Wina-srvuQ")
         .then(function (response) {
         return response.json();
     })
@@ -28,7 +28,6 @@ function Click(channel) {
     }
 }
 function CreateVideo(index, data) {
-    console.log("heyoo");
     var Video = document.createElement("div");
     Video.className = "Video";
     var Vid = document.createElement("iframe");
@@ -52,7 +51,7 @@ function CreateVideo(index, data) {
     Title.innerHTML = data["items"][index].snippet.title;
     Date.innerHTML = data["items"][index].snippet.date;
     Description.innerHTML = data["items"][index].snippet.description;
-    Vid.src = "\"https://www.youtube.com/embed/" + data["items"][index].id.videoId;
-    document.getElementById("Content").appendChild(Video);
+    Vid.src = "https://www.youtube.com/embed/" + data["items"][index].id.videoId;
+    document.getElementById("Videos").appendChild(Video);
 }
 getVideos();

@@ -2,20 +2,19 @@ var active : boolean = true;
 
     let getVideos = () => {
 
-    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYr_3hWoz2fyvCC0-2jq1Ow&maxResults=50&order=date&key=AIzaSyBVpbA0fb4QuTMURSzOvsb3_Wina-srvuQ`)
+        fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYr_3hWoz2fyvCC0-2jq1Ow&maxResults=10&order=date&key=AIzaSyBVpbA0fb4QuTMURSzOvsb3_Wina-srvuQ`)
     
-    .then (response => {    
-        
-        return response.json()
-    })
-    .then (data => {
-
-        console.log(data);
-        for (var i = 0; i < 50; i++){
-            CreateVideo(i, data);
-        
-        }
-    })
+        .then (response => {    
+            
+            return response.json()
+        })
+        .then (data => {
+    
+            console.log(data);
+            for (var i = 0; i < 50; i++){        
+                CreateVideo(i, data);
+            }      
+        })
   }
   
 function Click(channel : Element){
@@ -45,7 +44,6 @@ function Click(channel : Element){
 
 function CreateVideo(index : number, data : any){
 
-    console.log("heyoo");
     var Video = document.createElement("div");
 
     Video.className = "Video";
@@ -81,9 +79,9 @@ function CreateVideo(index : number, data : any){
     Title.innerHTML = data["items"][index].snippet.title;
     Date.innerHTML = data["items"][index].snippet.date;
     Description.innerHTML = data["items"][index].snippet.description;
-    Vid.src = `"https://www.youtube.com/embed/${data["items"][index].id.videoId}`
+    Vid.src = `https://www.youtube.com/embed/${data["items"][index].id.videoId}`
 
-    document.getElementById("Content")!.appendChild(Video);
+    document.getElementById("Videos")!.appendChild(Video);
 }
 
 getVideos();
