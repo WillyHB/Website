@@ -1,14 +1,14 @@
 var active = true;
-var getVideo = function (index, Title, Date, Description) {
+var getVideos = function () {
     fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYr_3hWoz2fyvCC0-2jq1Ow&maxResults=50&order=date&key=AIzaSyBVpbA0fb4QuTMURSzOvsb3_Wina-srvuQ")
         .then(function (response) {
         return response.json();
     })
         .then(function (data) {
         console.log(data);
-        Title.innerHTML = data["items"][index].snippet.title;
-        Date.innerHTML = data["items"][index].snippet.date;
-        Description.innerHTML = data["items"][index].snippet.description;
+        for (var i = 0; i < 50; i++) {
+            CreateVideo(i, data);
+        }
     });
 };
 function Click(channel) {
@@ -27,7 +27,8 @@ function Click(channel) {
         }
     }
 }
-function CreateVideo(index) {
+function CreateVideo(index, data) {
+    console.log("heyoo");
     var Video = document.createElement("div");
     Video.className = "Video";
     var Vid = document.createElement("iframe");
@@ -48,7 +49,10 @@ function CreateVideo(index) {
     InfoHeader.appendChild(Date);
     Video.appendChild(InfoHeader);
     Video.appendChild(Description);
-    getVideo(index, Title, Date, Description);
+    Title.innerHTML = data["items"][index].snippet.title;
+    Date.innerHTML = data["items"][index].snippet.date;
+    Description.innerHTML = data["items"][index].snippet.description;
+    Vid.src = "\"https://www.youtube.com/embed/" + data["items"][index].id.videoId;
     document.getElementById("Content").appendChild(Video);
 }
-CreateVideo(2);
+getVideos();
