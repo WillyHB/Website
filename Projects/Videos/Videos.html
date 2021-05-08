@@ -34,7 +34,7 @@
         <h2 class="Description">This is EPIC</h2> 
     </div>
 </template>
-
+<div id="Content">
 <div id="tabs">
     <div class="tab" id="WillyHB"  onclick="Click(this)" style="color: orange;">
         <h2>WillyHB</h2>
@@ -44,15 +44,13 @@
         <h2>AwfulWillyHBSofa</h2>
     </div>
 </div>
-
-<div id="Content">
-    
+  
     <div id="Videos">
 
     </div>
 
     <div id="LoadMoreParent">
-        <h2 id="LoadMore" onclick="">LOAD MORE</h2>
+        <h2 id="LoadMore" onclick="GetVideos()">LOAD MORE</h2>
     </div>
 
 </div>
@@ -63,8 +61,9 @@
         <button onclick="execute()">execute</button>
     </div>
 </footer>
-</body>1
+</body>
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="Videos.js"></script>
 
 </html>

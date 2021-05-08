@@ -1,12 +1,24 @@
 var active = true;
-var getVideos = function () {
-    fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYr_3hWoz2fyvCC0-2jq1Ow&maxResults=10&order=date&key=AIzaSyBVpbA0fb4QuTMURSzOvsb3_Wina-srvuQ")
+var vidData;
+var prevPageToken;
+var channelId = "UCYr_3hWoz2fyvCC0-2jq1Ow";
+var GetVideos = function () {
+    var url = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=" + channelId + "&maxResults=10&order=date&key=AIzaSyBVpbA0fb4QuTMURSzOvsb3_Wina-srvuQ&pageToken=";
+    if (vidData != null) {
+        url = url.concat(vidData.nextPageToken);
+        if (vidData.nextPageToken == prevPageToken) {
+            return;
+        }
+        prevPageToken = vidData.nextPageToken;
+    }
+    fetch(url)
         .then(function (response) {
         return response.json();
     })
         .then(function (data) {
         console.log(data);
-        for (var i = 0; i < 50; i++) {
+        vidData = data;
+        for (var i = 0; i < 10; i++) {
             CreateVideo(i, data);
         }
     });
@@ -15,6 +27,7 @@ function Click(channel) {
     if (active) {
         if (channel.id != "WillyHB") {
             channel.setAttribute('style', 'background-color: white; color: orange');
+            channelId = "UCOe8mKP12vFIhpbfvUjPlLQ";
             document.getElementById("WillyHB").setAttribute('style', 'background-color: rgb(246, 246, 246); color: white');
             active = false;
         }
@@ -22,10 +35,19 @@ function Click(channel) {
     else {
         if (channel.id == "WillyHB") {
             channel.setAttribute('style', 'background-color: white; color: orange');
+            channelId = "UCYr_3hWoz2fyvCC0-2jq1Ow";
             document.getElementById("AwfulWillyHBSofa").setAttribute('style', 'background-color: rgb(246, 246, 246); color: white');
             active = true;
         }
     }
+    var paras = document.getElementsByClassName('Video');
+    while (paras[0]) {
+        paras[0].parentNode.removeChild(paras[0]);
+    }
+    vidData = null;
+    prevPageToken = null;
+    GetVideos();
+    return;
 }
 function CreateVideo(index, data) {
     var Video = document.createElement("div");
@@ -54,4 +76,4 @@ function CreateVideo(index, data) {
     Vid.src = "https://www.youtube.com/embed/" + data["items"][index].id.videoId;
     document.getElementById("Videos").appendChild(Video);
 }
-getVideos();
+GetVideos();
