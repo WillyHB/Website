@@ -59,21 +59,59 @@ function CreateVideo(index, data) {
     var Title = document.createElement("h2");
     Title.className = "Title";
     Title.innerHTML = "hey";
-    var Date = document.createElement("h2");
-    Date.className = "Date";
-    Date.textContent = "April 5, 2020";
+    var date = document.createElement("h2");
+    date.className = "Date";
+    date.textContent = "April 5, 2020";
     var Description = document.createElement("h2");
     Description.className = "Description";
     Description.textContent = "This is EPIC";
     Video.appendChild(Vid);
     InfoHeader.appendChild(Title);
-    InfoHeader.appendChild(Date);
+    InfoHeader.appendChild(date);
     Video.appendChild(InfoHeader);
     Video.appendChild(Description);
+    var d = new Date(data["items"][index].snippet.publishedAt);
     Title.innerHTML = data["items"][index].snippet.title;
-    Date.innerHTML = data["items"][index].snippet.date;
+    date.innerHTML = d.toDateString();
     Description.innerHTML = data["items"][index].snippet.description;
     Vid.src = "https://www.youtube.com/embed/" + data["items"][index].id.videoId;
     document.getElementById("Videos").appendChild(Video);
 }
 GetVideos();
+function timeSince(date) {
+    var monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"];
+    var day = date.substring(0, 2);
+    var month = date.substring(3, 5);
+    date = date.replace(date.substring(3, 5), day);
+    date = date.replace(date.substring(0, 2), month);
+    var dateUTC = new Date(date);
+    var seconds = Math.floor(((new Date().getTime() / 1000) - dateUTC.getTime() / 1000));
+    var interval = seconds / 31536000;
+    interval = seconds / 604800;
+    if (interval > 1) {
+        return monthNames[dateUTC.getUTCMonth()] + " " + dateUTC.getDate() + ", " + dateUTC.getUTCFullYear();
+    }
+    interval = seconds / 86400;
+    if (interval >= 1 && interval < 2) {
+        return Math.floor(interval) + " day ago";
+    }
+    else if (interval >= 2) {
+        return Math.floor(interval) + " days ago";
+    }
+    interval = seconds / 3600;
+    if (interval > 1 && interval < 2) {
+        return Math.floor(interval) + " hour ago";
+    }
+    else if (interval >= 2) {
+        return Math.floor(interval) + " hours ago";
+    }
+    interval = seconds / 60;
+    if (interval > 1 && interval < 2) {
+        return Math.floor(interval) + " minute ago";
+    }
+    else if (interval >= 2) {
+        return Math.floor(interval) + " minutes ago";
+    }
+    return Math.floor(seconds) + " seconds ago";
+}
