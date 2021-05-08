@@ -125,6 +125,10 @@ body {
 
 .NewsElement article img{
 
+    border-color: rgb(228, 228, 228);
+    border-width: 0.1vw;
+    border-style:solid;
+
     margin: 1vw;
     border-radius: 1.5vw;
     vertical-align: middle;    
@@ -149,6 +153,10 @@ body {
     background: rgba(0, 0, 0, 0.7);
     z-index: 1;
     display: none;
+}
+
+.content img{
+    border-radius: 1.5vw;
 }
 
 .popup .content {
