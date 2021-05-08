@@ -50,6 +50,9 @@ function Click(channel) {
     return;
 }
 function CreateVideo(index, data) {
+    var a = document.createElement("a");
+    a.href = "https://www.youtube.com/watch?v=" + data["items"][index].id.videoId;
+    a.target = "_blank";
     var Video = document.createElement("div");
     Video.className = "Video";
     var Vid = document.createElement("iframe");
@@ -65,6 +68,7 @@ function CreateVideo(index, data) {
     var Description = document.createElement("h2");
     Description.className = "Description";
     Description.textContent = "This is EPIC";
+    a.appendChild(Video);
     Video.appendChild(Vid);
     InfoHeader.appendChild(Title);
     InfoHeader.appendChild(date);
@@ -75,7 +79,7 @@ function CreateVideo(index, data) {
     date.innerHTML = d.toDateString();
     Description.innerHTML = data["items"][index].snippet.description;
     Vid.src = "https://www.youtube.com/embed/" + data["items"][index].id.videoId;
-    document.getElementById("Videos").appendChild(Video);
+    document.getElementById("Videos").appendChild(a);
 }
 GetVideos();
 function timeSince(date) {

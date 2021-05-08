@@ -90,6 +90,11 @@ function Click(channel : Element){
 
 function CreateVideo(index : number, data : any){
 
+    var a = document.createElement("a");
+    a.href = `https://www.youtube.com/watch?v=${data["items"][index].id.videoId}`;
+
+    a.target = "_blank";
+
     var Video = document.createElement("div");
 
     Video.className = "Video";
@@ -112,7 +117,7 @@ function CreateVideo(index : number, data : any){
     Description.className = "Description";
     Description.textContent = "This is EPIC";
 
-
+    a.appendChild(Video);
     Video.appendChild(Vid);
 
     InfoHeader.appendChild(Title);
@@ -128,7 +133,7 @@ function CreateVideo(index : number, data : any){
     Description.innerHTML = data["items"][index].snippet.description;
     Vid.src = `https://www.youtube.com/embed/${data["items"][index].id.videoId}`
 
-    document.getElementById("Videos")!.appendChild(Video);
+    document.getElementById("Videos")!.appendChild(a);
 }
 
 GetVideos();

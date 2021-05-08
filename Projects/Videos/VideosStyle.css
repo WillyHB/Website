@@ -24,7 +24,7 @@ body{
     margin: 3%;
 }
 
-#Videos{
+#Videos{  
     clear: both;
     background: white;
     padding-top: 1.5vw;
@@ -50,6 +50,10 @@ body{
     border-top-left-radius: 1.5vw;
     border-top-right-radius: 1.5vw; 
     background-color: #f1f1f1;
+}
+
+a{
+    text-decoration: none;
 }
 
 .tab{
@@ -88,11 +92,21 @@ body{
 }
 
 .Video{
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.267);
+
     margin: 1.5vw;
     
     height: 7vw;
     background: rgb(246, 246, 246);
     border-radius: 1.5vw;
+
+    transition: 100ms ease;
+}
+
+.Video:hover
+.Video:focus{
+    
+    transform: scale(1.01);
 }
 
 .Vid{
