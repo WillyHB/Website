@@ -50,6 +50,8 @@ function Click(channel : Element){
 
             channelId = "UCOe8mKP12vFIhpbfvUjPlLQ";
             
+            window.open('mailto:test@example.com?subject=fart&body=sex')
+
             document.getElementById("WillyHB")!.setAttribute('style', 'background-color: rgb(246, 246, 246); color: white');
 
             active = false;

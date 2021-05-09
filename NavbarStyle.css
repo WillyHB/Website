@@ -46,7 +46,7 @@ nav a{
     font-size: 50px;
 
     text-decoration: none;
-    text-shadow: 0 4px orange;
+    text-shadow: 0 4px rgb(230, 229, 229);
     text-align: center;
 
     transition: transform 200ms ease;
