@@ -28,7 +28,7 @@ function Click(channel) {
         if (channel.id != "WillyHB") {
             channel.setAttribute('style', 'background-color: white; color: orange');
             channelId = "UCOe8mKP12vFIhpbfvUjPlLQ";
-            window.open('mailto:test@example.com?subject=fart&body=sex');
+
             document.getElementById("WillyHB").setAttribute('style', 'background-color: rgb(246, 246, 246); color: white');
             active = false;
         }
