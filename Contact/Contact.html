@@ -31,14 +31,14 @@
     
 
     <div class="customSelect">
-        <select>
+        <select id="select">
 
             <label>Message Type</label>
-            <option value="">Select</option>
-            <option value="support">Support</option>
-            <option value="collaborate">Collaborate</option>
-            <option value="feedback">General Feedback</option>
-            <option value="other">other</option>
+            <option value="IGNORE">Select</option>
+            <option value="Support">Support</option>
+            <option value="Collaborate">Collaborate</option>
+            <option value="Feedback">General Feedback</option>
+            <option value="Other">other</option>
         </select>
     </div>
     
@@ -65,26 +65,38 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 <script type="text/javascript">
  
+ var calledOnce = false;
+
 function sendEmail(){
 
+
     var templateParams = {
-    message_type: 'Bug',
+    message_type: document.getElementById("select").value,
     from_email: document.getElementById("yourEmail").value,
     message: document.getElementById("messageText").value
 };
 
-    if (validateEmail(document.getElementById("yourEmail").value)){
+    if (validateEmail(document.getElementById("yourEmail").value))
+    {
+
+        if (!calledOnce)
+        {
+            calledOnce = true;
 
         document.getElementById("yourEmail").style = "color:rgb(246, 246, 246)";
+        message: document.getElementById("messageText").style = "color:rgb(246, 246, 246)";
 
         emailjs.send('service_c2jhqtk', 'template_9vpv6p4', templateParams, 'user_v1Z4vT8B3TV5Z0XiBAo7V')
-    .then(function(response) {
-        location.href = "http://example.com";
+        .then(function(response) {
+
        console.log('SUCCESS!', response.status, response.text);
+
     }, function(error) {
        console.log('FAILED...', error);
     });
     }
+        }
+
 
     else{
 
