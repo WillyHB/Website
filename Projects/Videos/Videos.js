@@ -28,7 +28,6 @@ function Click(channel) {
         if (channel.id != "WillyHB") {
             channel.setAttribute('style', 'background-color: white; color: orange');
             channelId = "UCOe8mKP12vFIhpbfvUjPlLQ";
-
             document.getElementById("WillyHB").setAttribute('style', 'background-color: rgb(246, 246, 246); color: white');
             active = false;
         }
@@ -56,7 +55,7 @@ function CreateVideo(index, data) {
     a.target = "_blank";
     var Video = document.createElement("div");
     Video.className = "Video";
-    var Vid = document.createElement("iframe");
+    var Vid = document.createElement("img");
     Vid.className = "Vid";
     var InfoHeader = document.createElement("div");
     InfoHeader.className = "InfoHeader";
@@ -79,7 +78,7 @@ function CreateVideo(index, data) {
     Title.innerHTML = data["items"][index].snippet.title;
     date.innerHTML = d.toDateString();
     Description.innerHTML = data["items"][index].snippet.description;
-    Vid.src = "https://www.youtube.com/embed/" + data["items"][index].id.videoId;
+    Vid.src = "https://img.youtube.com/vi/" + data["items"][index].id.videoId + "/maxresdefault.jpg";
     document.getElementById("Videos").appendChild(a);
 }
 GetVideos();

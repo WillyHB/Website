@@ -22,9 +22,11 @@ body{
 
 #Content{
     margin: 3%;
+
 }
 
 #Videos{  
+    margin-bottom: 2vw;
     clear: both;
     background: white;
     padding-top: 1.5vw;
@@ -36,7 +38,7 @@ body{
     
     margin-top: 0;
     padding-bottom: 1vw;
-    min-height: 2500px;
+    min-height: 1vw;
     border-radius: 1.5vw;
 
     border-top-left-radius: 0;

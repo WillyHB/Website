@@ -99,7 +99,7 @@ function CreateVideo(index : number, data : any){
 
     Video.className = "Video";
 
-    var Vid = document.createElement("iframe");
+    var Vid = document.createElement("img");
     Vid.className = "Vid";
 
     var InfoHeader = document.createElement("div");
@@ -131,7 +131,8 @@ function CreateVideo(index : number, data : any){
     Title.innerHTML = data["items"][index].snippet.title;
     date.innerHTML = d.toDateString();
     Description.innerHTML = data["items"][index].snippet.description;
-    Vid.src = `https://www.youtube.com/embed/${data["items"][index].id.videoId}`
+    
+    Vid.src = `https://img.youtube.com/vi/${data["items"][index].id.videoId}/maxresdefault.jpg`
 
     document.getElementById("Videos")!.appendChild(a);
 }
