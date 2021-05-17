@@ -31,7 +31,7 @@ body{
 
     background-color: white;
     margin: 3%;
-    min-height: 2500px;
+    min-height: 72.328vh;
     border-radius: 1.5vw;
 }
 
@@ -158,6 +158,11 @@ body{
  .Divide h2 span { 
      background:#fff; 
      padding:0 10px; 
+ }
+
+ a{
+     text-decoration: none;
+     color: black;
  }
   
 

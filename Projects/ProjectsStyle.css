@@ -23,10 +23,11 @@ body{
 }
 
 #Projects{
-    min-height: 100vh;
+    
 }
 
 #Projects ul{
+    min-height: 70.24vh;
     display: block;
     margin: 0 auto;
     margin-top: 5vh;

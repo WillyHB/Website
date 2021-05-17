@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: MenuFont;
+    src: url("/Fonts/Menufont.ttf")
+}
+
+@font-face {
+    font-family: AmogusFont;
+    src: url("/Fonts/VCR_OSD_MONO.ttf")
+}
+
+body{
+    margin: 0 auto;
+
+    background-color: #252525;
+}
+
+#MainContent{
+    margin: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+
+    
+}
+
+h1{
+    font-family: MenuFont;
+    color: #C3C590;
+    text-shadow: 0 4px #93956e;
+    font-size: 3vw;
+}
+
+h2{
+    font-family: AmogusFont;
+    color: #954752;
+    font-size: 1vw;
+    margin-bottom: 6vw;
+}
+
+h3{
+    font-family: AmogusFont;
+    color: #C3C590;
+    text-shadow: 0 4px #93956e;
+    font-size: 2vw;
+}
+
+p{
+    font-family: AmogusFont;
+    color: #C3C590;
+    
+    font-size: 1vw;  
+}
+
+iframe{
+    width: 45vw;
+    height: 20vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+#MainContent div{
+    text-align: left;
+}
+
+#MainContent img{
+    border-radius: 0.3vw;
+    margin: 1vw;
+    width: 18vw;
+    height: 10vw;
+}
+
+.line{
+    background-color: #954752;
+    border-radius: 1vw;
+    height: 0.3vh;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+#banner{
+    margin-top: 20px;
+    width: 500px;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    opacity:0.8;
+    }
+
+nav{
+    background-color: #404040;
+    height: 250px;
+
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.267);
+}
+
+nav ul{
+
+    width: 800px;
+    margin: 0 auto;
+}
+
+nav li{
+    list-style-type: none;
+    width: 200px;
+    float: left;
+}
+
+nav a{
+
+    color: #C3C590;
+    line-height: 125px;
+    display: block;
+
+    font-family: MenuFont;
+    font-size: 50px;
+
+    text-decoration: none;
+    text-shadow: 0 4px #93956e;
+    text-align: center;
+
+    transition: transform 200ms ease;
+}
+
+nav a:hover, nav a:focus{
+
+    transform: scale(1.1);
+    color: rgb(248, 245, 245);
+}
+
+nav a:active{
+    transform: scale(0.9);
+}
+
+footer div {
+
+    margin-top: auto;
+    clear:both;
+    background-color: #404040;
+    height: 250px;
+
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.267);
+    bottom: 0;
+}
