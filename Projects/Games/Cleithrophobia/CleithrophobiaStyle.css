@@ -1,8 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
 @font-face{
     font-family: MenuFont;
     src: url("/Fonts/Menufont.ttf")
@@ -14,18 +9,16 @@
 }
 
 body{
-    margin: 0 auto;
 
     background-color: #252525;
 }
 
 #MainContent{
+
     margin: 2vw;
     margin-left: 10vw;
     margin-right: 10vw;
-    text-align: center;
-
-    
+    text-align: center;   
 }
 
 h1{
@@ -49,6 +42,21 @@ h3{
     font-size: 2vw;
 }
 
+#Buy{
+    background-color: #404040;
+
+    border-radius: 1.5vw;
+    display: inline-block;
+    width: 20vw;
+
+    transition: 150ms ease-in-out;
+}
+
+#Buy:hover, #Buy:active{
+
+    background-color: #464646;
+}
+
 p{
     font-family: AmogusFont;
     color: #C3C590;
@@ -70,8 +78,9 @@ iframe{
 #MainContent img{
     border-radius: 0.3vw;
     margin: 1vw;
-    width: 18vw;
-    height: 10vw;
+    width: 20vw;
+    height: 12vw;
+
 }
 
 .line{
@@ -81,16 +90,6 @@ iframe{
     margin-top: 3vw;
     margin-bottom: 3vw;
 }
-
-
-
-
-
-
-
-
-
-
 
 #banner{
     margin-top: 20px;
