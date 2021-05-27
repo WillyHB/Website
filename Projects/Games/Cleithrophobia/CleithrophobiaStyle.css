@@ -51,13 +51,13 @@ h3{
 
     transition: 150ms ease-in-out;
 
-    color: #5f5f5f;
-    text-shadow: 0 0.15vw #4b4b4b;
+    color: #C3C590;
+    text-shadow: 0 0.15vw #93956e;
 }
 
 #Buy:hover, #Buy:active{
 
-    /*background-color: #464646;*/
+    background-color: #464646;
 }
 
 p{
