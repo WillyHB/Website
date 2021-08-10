@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 
-<html>
+<div class="wrapper">
+    <html>
 
-    <title>AwfulWillyHBSofa — Contact</title>
-
-<body>
+        <title>AwfulWillyHBSofa — Contact</title>
     
-    <link rel="stylesheet" href="/Contact/ContactStyle.css">
-    <link rel="stylesheet" href="/NavbarStyle.css">
-    <header>
-        <nav>  
-            <br>   
-                <img src="/Images/Banner.png" alt="" id="banner">
-            <ul>   
-                <li><a href="/Home/index.html">HOME</a></li>
-                <li><a href="/Projects/Projects.html">PROJECTS</a></li>
-                <li><a href="/News/news.html">NEWS</a></li>
-                <li><a href="/Contact/Contact.html">CONTACT</a></li>   
-            </ul>
-        </nav>
-
-</header>
-
-<div id="MainContent">
-
-<div id="email">
-    <div class="inputField">
-
-        <label>Your Email</label>
-        <input type="text" id="yourEmail">
-    </div>
-    
-
-    <div class="customSelect">
-        <select id="select">
-
-            <label>Message Type</label>
-            <option value="IGNORE">Select</option>
-            <option value="Support">Support</option>
-            <option value="Collaborate">Collaborate</option>
-            <option value="Feedback">General Feedback</option>
-            <option value="Other">other</option>
-        </select>
-    </div>
-    
-    <div class="inputField" id="Message">
-    
-        <label>Message</label>
-        <textarea style="resize: none; height: 10vw;" cols="30" rows="10" id="messageText"></textarea>
+    <body>
         
+        <link rel="stylesheet" href="/Contact/ContactStyle.css">
+        <link rel="stylesheet" href="/NavbarStyle.css">
+        <header>
+            <nav>  
+                <br>   
+                    <img src="/Images/Banner.png" alt="" id="banner">
+                <ul>   
+                    <li><a href="/Home/index.html">HOME</a></li>
+                    <li><a href="/Projects/Projects.html">PROJECTS</a></li>
+                    <li><a href="/News/news.html">NEWS</a></li>
+                    <li><a href="/Contact/Contact.html">CONTACT</a></li>   
+                </ul>
+            </nav>
+    
+    </header>
+    
+    <div id="MainContent">
+    
+    <div id="email">
+        <div class="inputField">
+    
+            <label>Your Email</label>
+            <input type="text" id="yourEmail">
+        </div>
+        
+    
+        <div class="customSelect">
+            <select id="select">
+    
+                <label>Message Type</label>
+                <option value="IGNORE">Select</option>
+                <option value="Support">Support</option>
+                <option value="Collaborate">Collaborate</option>
+                <option value="Feedback">General Feedback</option>
+                <option value="Other">other</option>
+            </select>
+        </div>
+        
+        <div class="inputField" id="Message">
+        
+            <label>Message</label>
+            <textarea style="resize: none; height: 10vw;" cols="30" rows="10" id="messageText"></textarea>
+            
+        </div>
+    
+        <div id="Send" onclick="sendEmail()">
+            <h5>Send</h5>
+        </div>
     </div>
-
-    <div id="Send" onclick="sendEmail()">
-        <h5>Send</h5>
     </div>
-</div>
+    </body>
+    </html>
 </div>
 
 <footer>    
@@ -62,7 +66,6 @@
 
     </div>
 </footer>
-</body>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 <script type="text/javascript">
@@ -119,4 +122,4 @@ function validateEmail(email)
 
 </script>
 
-</html>
+
