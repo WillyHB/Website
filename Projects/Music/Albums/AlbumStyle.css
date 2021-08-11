@@ -24,10 +24,10 @@ body{
 
     overflow: hidden;
     border-radius: 1.5vw;
-    height: 5vw;
+    height: 200px;
     background-color: white;
-    margin: 1vw;
-    margin-right: 60%;
+    margin: 20px;
+    width: 700px;
 }
 
 .number{
@@ -35,50 +35,41 @@ body{
     background-color: rgb(228, 228, 228);
     z-index: 10;
     float: left;
-    height: 5vw;
+    height: 200px;
     border-top-left-radius: 1.5vw;
     border-bottom-left-radius: 1.5vw;
 }
 
 .audio{
     
+    margin-top: 68px;
     background-color:  rgb(228, 228, 228);
-    
-    width: 15vw;
-    border-top-right-radius: 1.5vw;
-    display: inline-block;
-    padding: 0.5vw;
+    width: 100%;
+    bottom: 0;
+
+    padding: 20px;
 }
 
 h1{  
-    font-size: 1vw;
-    padding: 1vw;
-    margin-left: 3.5vw;
+    font-size: 40px;
+    padding: 10px;
     color: orange;
     font-family: AmogusFont;
 }
 
 h2{
     color: white;
-    font-size: 3vw;
+    font-size: 100px;
     padding-left: 1vw;
-    line-height: 5vw;
+    line-height: 200px;
     font-family: AmogusFont;
     float: left;
     padding-right: 1vw;
 }
 
 .track audio{
-    width: 10vw;
+    width: 400px;
     color: orange;
-    height: 1vw;
-    
-    vertical-align: middle;
+    height: 30px;
 }
 
-.track svg{
-    line-height: 2.5vh;
-    margin-right: 3vw;
-    float: right;
-    height: 1vw;
-}
