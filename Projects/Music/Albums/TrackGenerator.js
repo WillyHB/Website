@@ -14,8 +14,15 @@ function generateTrack(tracks){
     
         clone.getElementById("h1").textContent = tracks[i].title;
         clone.getElementById("h2").textContent = doubleDigitnum(i+1);
-    
-        clone.getElementById("audiosrc").src = `/Music/Cleithrophobia/${i+1} ${tracks[i].title}.wav`;
+        
+        if (tracks[i].title != "Deez Rocks (Parts I - IV)"){
+            clone.getElementById("audiosrc").src = `/Music/Cleithrophobia/${i+1} ${tracks[i].title}.wav`;
+        }
+
+        else{
+            clone.getElementById("audiosrc").src = `/Music/Cleithrophobia/${i+1} ${tracks[i].title}.mp3`;
+        }
+   
     
         document.getElementById("tracks").appendChild(clone);
     }
