@@ -4,99 +4,84 @@
 
     <title>AwfulWillyHBSofa — Cleithrophobia Soundtrack</title>
 
-<body>
-    
-    <link rel="stylesheet" href="/Projects/Music/Albums/AlbumStyle.css">
-    <link rel="stylesheet" href="/NavbarStyle.css">
-    <header>
-        <nav>  
-            <br>   
-                <img src="/Images/Banner.png" alt="" id="banner">
-            <ul>   
-                <li><a href="/Home/index.html">HOME</a></li>
-                <li><a href="/Projects/Projects.html">PROJECTS</a></li>
-                <li><a href="/News/news.html">NEWS</a></li>
-                <li><a href="/Contact/Contact.html"">CONTACT</a></li>   
-            </ul>
-        </nav>
+    <body>
+        
+        <link rel="stylesheet" href="/Projects/Music/Albums/AlbumStyle.css">
+        <link rel="stylesheet" href="/NavbarStyle.css">
+        <header>
+            <nav>  
+                <br>   
+                    <img src="/Images/Banner.png" alt="" id="banner">
+                <ul>   
+                    <li><a href="/Home/index.html">HOME</a></li>
+                    <li><a href="/Projects/Projects.html">PROJECTS</a></li>
+                    <li><a href="/News/news.html">NEWS</a></li>
+                    <li><a href="/Contact/Contact.html"">CONTACT</a></li>   
+                </ul>
+            </nav>
 
-</header>
+        </header>
 
-<div class="track">
-    <div class="number">
-        <h2>0</h1>
-    </div>
-    <h1>Aside From Everything</h1>
+        <div id="tracks">
 
-    <div class="audio">
-        <audio controls loop=loop>
-            <source src="/Music/Cleithrophobia/Aside From Everything.wav">
-        </audio>
-    </div>
-</div>
+        </div>
 
-<div class="track">
-    <div class="number">
-        <h2>1</h1>
-    </div>
-    <h1>Iron Gate</h1>
+        <template id="template">
+                <div class="track">
+                    <div class="number">
+                        <h2 id="h2">0</h2>
+                    </div>
+                    <h1 id="h1">Aside From Everything</h1>
+                
+                    <div class="audio">
+                        <audio controls loop=loop>
+                            <source id="audiosrc" src="/Music/Cleithrophobia/">
+                        </audio>
+                    </div>
+                </div>
+        </template>
 
-    <div class="audio">
-        <audio controls loop=loop>
-            <source src="/Music/Cleithrophobia/Iron Gate.wav">
-        </audio>
-    </div>
 
-</div>
-
-<div class="track">
-    <div class="number">
-        <h2>2</h1>
-    </div>
-    <h1>Purple High</h1>
-
-    <div class="audio">
-        <audio controls loop=loop>
-            <source src="/Music/Cleithrophobia/Purple High.wav">
-        </audio>
-    </div>
-
-</div>
-
-<div class="track">
-    <div class="number">
-        <h2>3</h1>
-    </div>
-    <h1>Though I Am Not</h1>
-
-    <div class="audio">
-        <audio controls loop=loop>
-            <source src="/Music/Cleithrophobia/Though I am not.wav">
-        </audio>
-    </div>
-
-</div>
-
-<div class="track">
-    <div class="number">
-        <h2>4</h1>
-    </div>
-    <h1>Sunrise</h1>
-
-    <div class="audio">
-        <audio controls loop=loop>
-            <source src="/Music/Cleithrophobia/Sunrise.wav">
-        </audio>
-    </div>
-</div>
-    
-</body>
+    </body>
 </html>
 </div>
 
 <footer>    
     <div>
+        <script src="/Projects/Music/Albums/TrackGenerator.js"></script>
 
+        <script>
+            var tracks = 
+            [
+            new track("Main Menu"),
+                new track("Depths Above"),
+                new track("The Cave"),
+                new track("Though I am not"),
+                new track("Columbus"),
+                new track("Arachnophobia"),
+                new track("Grimy"),
+                new track("Illusions"),
+                new track("Alone and Scared"),
+                new track("Iron Gate"),
+                new track("Purple High"),
+                new track("Unlikely"),
+                new track("Demons"),
+                new track("Aside From Everything"),
+                new track("Alpha"),
+                new track("Nightfall"),
+                new track("All in"),
+                new track("Life"),
+                new track("Full Moon"),
+                new track("Sunrise"),
+                new track ("Deez Rocks (Parts I - IV)"),
+                new track("Tremble"),
+                new track("Fragments"),
+                new track("The Many Aspects"),
+                new track("Light and Shadow")
+            ];
+            
+            generateTrack(tracks);
+        </script>
     </div>
 </footer>
 

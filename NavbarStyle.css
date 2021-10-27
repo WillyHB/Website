@@ -58,7 +58,7 @@ nav a{
     text-shadow: 0 4px rgb(230, 229, 229);
     text-align: center;
 
-    transition: transform 200ms ease;
+    transition: transform 100ms ease-in-out;
 }
 
 nav a:hover, nav a:focus{
@@ -68,7 +68,7 @@ nav a:hover, nav a:focus{
 }
 
 nav a:active{
-    transform: scale(0.9);
+    transform: scale(1);
 }
 
 footer{

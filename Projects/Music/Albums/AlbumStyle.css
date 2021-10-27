@@ -41,7 +41,7 @@ body{
 }
 
 .audio{
-    
+
     margin-top: 68px;
     background-color:  rgb(228, 228, 228);
     width: 100%;
@@ -51,7 +51,7 @@ body{
 }
 
 h1{  
-    font-size: 40px;
+    font-size: 32px;
     padding: 10px;
     color: orange;
     font-family: AmogusFont;

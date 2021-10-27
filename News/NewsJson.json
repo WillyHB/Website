@@ -43,6 +43,14 @@
       "Date": "11/08/2021 00:11:12",
       "CoverImageFileName": "AlbumCoverFinal.png",
       "ArticleImageFileNames": []
+    },
+    {
+      "Title": "Album Released",
+      "Description": "Cleithrophobia Original Soundtrack out now! It's free on YouTube, but you can also purchase it on steam for $4.99 USD, if you feel like supporting me :)\n",
+      "Text": "As a special halloween treat, I'm releasing the Cleithrophobia Original Soundtrack a whole week before the release of Cleithrophobia! It's now live on <span style=\"color:orange;\"><strong>YouTube</strong></span>, for free, but you can also listen to it on this website (Projects > Music > Cleithrophobia OST). It's also live on <span style=\"color:orange;\"><strong>Steam</strong></span>, and you can buy it there for <span style=\"color:orange;\"><strong>$4.99 USD</strong></span> if you want to support me and what I do!\n\nAs a special announcement, I would like to also add that the next game that I create may be far away. I'm currently in the process of learning c++, alongside OpenGL, which I've been dreaming of doing for months, but never was able to, due to the development of Cleithrophobia. I've finally parted ways with Unity, and begun my long process of learning to make games from scratch. My next game with be <span style=\"color:orange;\"><strong>A full release of Grappler</strong></span>, as I feel it has a lot of potential, but it is still in the conceptual phase.",
+      "Date": "26/10/2021 23:21:35",
+      "CoverImageFileName": "Main CapsuleSoundtrack.png",
+      "ArticleImageFileNames": []
     }
   ]
 }
