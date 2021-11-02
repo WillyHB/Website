@@ -86,6 +86,13 @@ iframe{
 
 }
 
+h5{
+    font-family: AmogusFont;
+    color: #954752;
+    font-size: 1vw;
+    margin-bottom: -25px;
+}
+
 .line{
     background-color: #954752;
     border-radius: 1vw;
