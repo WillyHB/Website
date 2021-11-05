@@ -1,0 +1,71 @@
+label, h5{
+
+    font-size: 2em;
+    color: rgb(235, 235, 235);
+    display: block;
+    border-radius: 0.3vw;
+}
+
+h5{
+    background-color: rgb(27, 27, 27);
+    margin-top: 50px;
+    display: inline-block;
+    padding: 25px;
+}
+
+h5:hover{
+    transform: scale(1.1);
+    background-color: rgb(31, 31, 31);
+}
+
+h5:active{
+    background-color: rgb(27, 27, 27);
+    transform: scale(0.9);
+}
+
+#mainContent{
+    
+    font-family: monospace;
+    text-align: center;
+    min-height: 1000px;
+    background-color: rgb(19, 19, 19);
+    
+    margin: 10vw;
+    margin-top: 3vw;
+    padding: 3vw;
+}
+
+textarea{
+
+    font-size: 1.6em;
+    padding: 25px;
+    width: 70%;
+    height: 500px;
+    color: rgb(235, 235, 235);
+    border: 0;
+    background-color: rgb(31, 31, 31);
+}
+
+select{
+    font-family: monospace;
+    font-size: 1.6em;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    border: 0;
+    margin-top: 50px;
+    color: rgb(235, 235, 235);
+
+}
+
+input{
+    height: 10px;
+    padding: 25px;
+    font-size: 1em;
+    width: 250px;
+    color: rgb(235, 235, 235);
+    margin-top: 1vw;
+    margin-bottom: 50px;
+    border: 0;
+    background-color: rgb(31, 31, 31);
+}

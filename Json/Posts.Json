@@ -1,0 +1,46 @@
+{
+  "Articles": [
+    {
+      "Title": "First Game Release!",
+      "Description": "I attended the znet 2021 gamejam, and ended up releasing my first game!",
+      "Text": "This year, Zaviinet (The creators of Voids Adrift) hosted a week long gamejam, which I partook in, and subsequently released my first game, <span style=\"color:orange;\"><strong> Gun & Grapple </strong></span>.\n\n<img src=\"/Images/First Game Release!/SS_23-04-2021_20-32-57.png\" style=\"height:20vw;width:40vw;\">\n\nRight now the game is very barebones, but right now, I'm definitely considering making it into a feature length game. Though it is not possible at the current moment, as I am busy with another project, which I will reveal very soon!\n\nYou can download it for free at the Games Section of my website, I hope you enjoy it!",
+      "Date": "09/05/2021 00:33:34",
+      "CoverImageFileName": "SS_27-04-2021_23-59-03.png",
+      "ArticleImageFileNames": [
+        "C:\\Users\\Willy\\AppData\\LocalLow\\AwfulWillyHBSofa\\Gun _ Grapple\\Screenshots\\SS_23-04-2021_20-32-57.png"
+      ]
+    },
+    {
+      "Title": "Cleithrophobia Announcement",
+      "Description": "My new game, which I've been working on for almost a year now, has been announced!",
+      "Text": "After many months of hard work, I'm proud to finally reveal <span style=\"color:orange;\"><strong>Cleithrophobia</strong></span> to you all. \n\n<iframe width = \"40%\" height = \"500vw\" src = \"https://www.youtube.com//embed/Z253ArqGcDY\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\nThe game is set underground, after you fall through the floor of a small cave, while exploring the area. You wake up realizing that there's no way to get back up, and the only way to go, is forward. Throughout your journey, you meet many interesting creatures, experience many different weather conditions, and just get to live in this massive underground environment. Though your only goal is to get back up to the surface, you might find that to be hopeless, the further and further down you get. You should never lose hope however...\n\nThe game is planned to release the <span style=\"color:orange;\"><strong>3rd November 2021</strong></span> on Steam. I may release it on other platforms, if interest is high enough. I'll reveal more about the game slowly, as up until now, you've only seen the first 3 levels, and the beginning of the 4th. \n\nEven though it's my second ever game, I still feel that it will be worth a buy for anyone who thinks it may sound interesting. ",
+      "Date": "26/05/2021 21:00:00",
+      "CoverImageFileName": "Main Capsule Image - Copy.png",
+      "ArticleImageFileNames": []
+    },
+    {
+      "Title": "New Trailer",
+      "Description": "New Trailer, New Art, New Levels, New Feel",
+      "Text": "It's been a <span style=\"color:orange;\"><strong>LONG</strong></span>  time since the last 'article', and I've been hard at work, and I'm proud to show off just a bit of that work in the new trailer which I have now released on my Youtube channel and steampage. Alongside the new trailer, I've added new art for the first and fourth level, as I felt they didn't really fit the rest of the game.\n\n<iframe width = \"40%\" height = \"500vw\" src = \"https://www.youtube.com//embed/Xf2nlJfvUa0\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen ></iframe>\n\nIn the trailer, I've not really shown off a lot of level 4 & 5. This is because they are still in heavy development, and I don't have a lot to show. Next trailer will definitely have more footage to show.\n\nTo stay up to date with the development of Cleithrophobia, or any of my future games, you can follow my twitter. I'll still be posting here, but more frequently on Twitter.",
+      "Date": "23/07/2021 23:46:00",
+      "CoverImageFileName": "Weather.png",
+      "ArticleImageFileNames": []
+    },
+    {
+      "Title": "New Music Tab & Album",
+      "Description": "I have added the music page, allowed you to listen to all the music I've created. I also added 5 songs from my upcoming game, Cleithrophobia, which you can listen to there.",
+      "Text": "I finally added <span style=\"color:orange;\"><strong>The Music Page</strong></span>. As you may have realised, it has been grayed out since the creation of this website, but with the addition of 5 new songs, I've had to sit down and create it.\n\nYou can now listen to those songs in the music page, by going to the <span style=\"color:orange;\"><strong>Cleithrophobia Original Soundtrack</strong></span>. The songs are not quite in correct order, and there are some songs in between, but I feel that these songs represent the other songs which have and will be made for <span style=\"color:orange;\"><strong>Cleithrophobia</strong></span>.\n\nI've spent hours creating these songs, and seeing as they are my first dive into music creation (after my song <span style=\"color:orange;\"><strong>Soaring High In The Clouds</strong></span> on my WillyHB YouTube Channel), I feel that they are pretty good! But let me know what you think, by either commenting on my Twitter post, or contacting me via the <span style=\"color:orange;\"><strong>Contact Page</strong></span>!\n",
+      "Date": "11/08/2021 00:11:12",
+      "CoverImageFileName": "AlbumCoverFinal.png",
+      "ArticleImageFileNames": []
+    },
+    {
+      "Title": "Album Released",
+      "Description": "Cleithrophobia Original Soundtrack out now! It's free on YouTube, but you can also purchase it on steam for $4.99 USD, if you feel like supporting me :)\n",
+      "Text": "As a special halloween treat, I'm releasing the Cleithrophobia Original Soundtrack a whole week before the release of Cleithrophobia! It's now live on <span style=\"color:orange;\"><strong>YouTube</strong></span>, for free, but you can also listen to it on this website (Projects > Music > Cleithrophobia OST). It's also live on <span style=\"color:orange;\"><strong>Steam</strong></span>, and you can buy it there for <span style=\"color:orange;\"><strong>$4.99 USD</strong></span> if you want to support me and what I do!\n\nAs a special announcement, I would like to also add that the next game that I create may be far away. I'm currently in the process of learning c++, alongside OpenGL, which I've been dreaming of doing for months, but never was able to, due to the development of Cleithrophobia. I've finally parted ways with Unity, and begun my long process of learning to make games from scratch. My next game with be <span style=\"color:orange;\"><strong>A full release of Grappler</strong></span>, as I feel it has a lot of potential, but it is still in the conceptual phase.",
+      "Date": "26/10/2021 23:21:35",
+      "CoverImageFileName": "Main CapsuleSoundtrack.png",
+      "ArticleImageFileNames": []
+    }
+  ]
+}

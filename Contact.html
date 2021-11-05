@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Stylesheets/Style.css">
+        <link rel="stylesheet" href="Stylesheets/ContactStyle.css">
+
+        <Title>Contact</Title>
+    </head>
+
+    <body>    
+        <nav>
+            <div id="navDiv">
+                <img src="/Images/Banner.png" alt="" class="center" id="title">
+
+                <ul>
+                    <li><a href="Home.html"><h3>Home</h3></a></li>
+                    <li><a href="Games.html"><h3>Games</h3></a></li>
+                    <li><a href="Music.html"><h3>Music</h3></a></li>
+                    <li><a href="Contact.html"><h3>Contact</h3></a></li>
+                    <li><a href="About.html"><h3>About</h3></a></li>
+                </ul>
+            </div>       
+        </nav> 
+
+        <div id="mainContent">
+            <div id="email">
+                <div class="inputField">
+            
+                    <label>Your Email</label>
+                    <input type="text" id="yourEmail">
+                </div>
+                
+        
+                
+                <div class="inputField" id="Message">
+                
+                    <label>Message</label>
+                    <textarea style="resize: none;" cols="30" rows="10" id="messageText"></textarea>
+                    
+                </div>
+
+                <div class="customSelect">
+                    <select id="select">
+            
+                        <label>Message Type</label>
+                        <option value="IGNORE">Select</option>
+                        <option value="Support">Support</option>
+                        <option value="Collaborate">Collaborate</option>
+                        <option value="Feedback">General Feedback</option>
+                        <option value="Other">other</option>
+                    </select>
+                </div>
+            
+                <div id="Send" onclick="sendEmail()">
+                    <h5>Send</h5>
+                </div>
+            </div>
+            </div>
+            </body>
+            </html>
+        </div>
+        
+        <footer>    
+            <div>
+        
+            </div>
+        </footer>
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+         
+         document.querySelector("input").value = "mail@example.com";
+         var calledOnce = false;
+        
+        function sendEmail(){
+        
+        
+            var templateParams = {
+            message_type: document.getElementById("select").value,
+            from_email: document.getElementById("yourEmail").value,
+            message: document.getElementById("messageText").value
+        };
+        
+            if (validateEmail(document.getElementById("yourEmail").value))
+            {
+        
+                if (!calledOnce)
+                {
+                    calledOnce = true;
+        
+                document.getElementById("yourEmail").style = "color:rgb(246, 246, 246)";
+                message: document.getElementById("messageText").style = "color:rgb(246, 246, 246)";
+        
+                emailjs.send('service_c2jhqtk', 'template_9vpv6p4', templateParams, 'user_v1Z4vT8B3TV5Z0XiBAo7V')
+                .then(function(response) {
+        
+               console.log('SUCCESS!', response.status, response.text);
+        
+            }, function(error) {
+               console.log('FAILED...', error);
+            });
+            }
+                }
+        
+        
+            else{
+        
+                document.getElementById("yourEmail").style = "color:#f29696;";
+        
+                document.getElementById("yourEmail").value = "Email Is Invalid";
+            }
+        
+        
+        }
+        
+        function validateEmail(email) 
+            {
+                var re = /\S+@\S+\.\S+/;
+                return re.test(email);
+            }
+            
+        
+        </script>
+        
+        
+        

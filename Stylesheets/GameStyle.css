@@ -1,0 +1,57 @@
+
+#mainContent{
+    padding: 3vw;
+    min-height: 1000px;
+    
+    margin: 10vw;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+#titleSect, #reviews, #description{
+    margin-bottom: 3vw;
+    padding: 3vw;
+    background-color: rgb(19, 19, 19);
+    min-height: 100px;
+    color: white;
+    font-family: monospace;
+}
+
+#stores{
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    width: 30%;
+    height: 100px;
+    align-items: center;
+    flex-direction: row;
+}
+
+#stores img{
+    height: 50px;
+}
+
+h2{
+
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width : 1228px) {
+    #topContent{
+        height: 34vw;
+        width: 90%;
+    
+    }
+}
+
+@media only screen and (min-width : 1228.1px) {
+    #topContent{
+        height: 20vw;
+        width: 50%;
+    
+    }
+}
+
+.icon{
+    filter: invert(100%) sepia(100%) saturate(21%) hue-rotate(280deg) brightness(106%) contrast(106%);
+}
+    

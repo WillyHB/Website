@@ -1,0 +1,15 @@
+#mainContent{
+    
+    min-height: 1000px;
+    background-color: rgb(19, 19, 19);
+    
+    margin: 10vw;
+    margin-top: 3vw;
+    padding: 3vw;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: monospace;
+    color: rgb(235, 235, 235);
+}
