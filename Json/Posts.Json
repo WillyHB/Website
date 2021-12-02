@@ -41,6 +41,15 @@
       "Date": "26/10/2021 23:21:35",
       "CoverImageFileName": "Main CapsuleSoundtrack.png",
       "ArticleImageFileNames": []
+    },
+
+    {
+      "Title": "Cleithrophobia Released!",
+      "Description": "Exploring the forest quickly turns into a nightmare, as you fall through the ground into an enourmous cave. Having no way but forward, you continue through the massive cavern, being met with hostility from the local wildlife, and exploring a lost human civilization, destroyed by an unknown force...",
+      "Text": "After <span style=\"color:orange;\"><strong>15 Months</strong></span> of hard work, Cleithrophobia has Finally Released!\n\n<iframe width = \"1903\" height = \"768\" src = \"https://www.youtube.com//embed/PF2A_DVaymk\" frameborder = \"0\" allow = \"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen ></iframe>\n\nIt's live now on steam, at 7.99$, a fair price if I do say so myself!\n\nI'll continue to fix any bugs that pop up, make sure to use the <span style=\"color:orange;\"><strong>Feedback Tab</strong></span> ingame, where you can report any bugs, or just give general feedback. Otherwise, just head on over to the contact page on this site!\n\nAs I mentioned in a previous post, I'm currently in the midst of learning c++, which means that, sadly, my next game will be a while away. I hope you all understand!",
+      "Date": "03/11/2021 21:00:00",
+      "CoverImageFileName": "Main Capsule Image.png",
+      "ArticleImageFileNames": []
     }
   ]
 }
