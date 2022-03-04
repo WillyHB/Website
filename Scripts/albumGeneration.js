@@ -18,6 +18,7 @@ function generateTrack(tracks){
 
         var h12 = document.createElement("h1");
         h12.textContent = doubleDigitnum(i+1);
+        h12.style = "color:rgb(221, 45, 74);";
 
         var sound      = document.createElement('audio');
         sound.id       = 'audiosrc';

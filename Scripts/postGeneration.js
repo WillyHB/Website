@@ -16,7 +16,7 @@ function loadSideBar(){
     for (let i = Articles.length-1; i >= 0; i--){
         var h2 = document.createElement("h2");
         h2.addEventListener("click", function(){enter(i)});
-        h2.innerHTML = `<strong style=\"color: rgb(55, 55, 255);\" onclick=\"test()\"'>${timeSince(Articles[i].Date)}</strong> <br> ${Articles[i].Title}`;
+        h2.innerHTML = `<strong style=\"color: rgb(221, 45, 74);\" onclick=\"test()\"'>${timeSince(Articles[i].Date)}</strong> <br> ${Articles[i].Title}`;
 
         document.getElementById("summaries").append(h2);
     }

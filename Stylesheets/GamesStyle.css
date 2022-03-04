@@ -3,6 +3,10 @@ h1, h2, p{
     font-family: monospace;
 }
 
+.date{
+    color: rgb(221, 45, 74);
+}
+
 .game{
     background-color: rgb(19, 19, 19);
     text-align: center;

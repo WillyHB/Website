@@ -8,6 +8,10 @@
     text-align: center;
 }
 
+h1{
+    color: rgb(221, 45, 74);
+}
+
 #titleSect, #reviews, #description{
     margin-bottom: 3vw;
     padding: 3vw;

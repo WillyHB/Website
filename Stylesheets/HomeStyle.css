@@ -16,7 +16,10 @@
 }
 #posts h1, h2, h3{
     font-family: monospace;
-    color:rgb(235, 235, 235);
+}
+
+#posts h3{
+    color: rgb(221, 45, 74);
 }
 
 #socials h2{
@@ -29,7 +32,8 @@
 #posts h1{
     float: left;
     font-size: 2em;
-
+    color:rgb(235, 235, 235);
+    
 }
 
 .postBottom{

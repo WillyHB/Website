@@ -13,3 +13,7 @@ h1, h2{
     font-family: monospace;
     color: rgb(235, 235, 235);
 }
+
+h1{
+    color: rgb(221, 45, 74);
+}
